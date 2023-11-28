@@ -1,0 +1,85 @@
+:root {
+  --clr-white: hsla(0, 0%, 0%, 1);
+  --clr-grey-100: hsla(0, 0%, 90%, 1);
+  --clr-grey-200: hsla(0, 0%, 70%, 1);
+  --clr-grey-300: hsla(0, 0%, 50%, 1);
+  --clr-grey-400: hsla(0, 0%, 30%, 1);
+  --clr-grey-500: hsla(0, 0%, 12%, 1);
+  --clr-black: hsla(0, 0%, 5%, 1);
+  --fs-200: 24px;
+  --fs-300: 32px;
+  --fs-400: 40px;
+  --fs-600: 64px;
+}
+
+body {
+  background-color: var(--clr-black);
+  margin: 0;
+  padding: 0;
+}
+
+.cardTitle {
+  visibility: hidden;
+}
+
+.card {
+  margin: 15vw;
+  width: 30vw;
+  height: 30vh;
+}
+
+.gallery {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  align-items: center;
+}
+
+.one {
+  background: var(--clr-grey-300);
+}
+
+.two {
+  background: var(--clr-grey-300);
+}
+
+.three {
+  background: var(--clr-grey-300);
+}
+
+.four {
+  background: var(--clr-grey-300);
+}
+
+.five {
+  background: var(--clr-grey-300);
+}
+
+.six {
+  background: var(--clr-grey-300);
+}
+
+.seven {
+  background: var(--clr-grey-300);
+}
+
+.eight {
+  background: var(--clr-grey-300);
+}
+
+.container {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
