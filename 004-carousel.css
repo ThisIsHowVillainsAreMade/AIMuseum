@@ -26,6 +26,7 @@ body {
   border: 1px solid #ccc;
   margin: 40px 0;
   position: relative;
+  z-index: 3;
   width: 210px;
   height: 140px;
   margin: 80px auto;
@@ -56,8 +57,18 @@ body {
   transition: transform 1s, opacity 1s;
 }
 
+div.carousel__cell {
+  opacity: 0.5 !important;
+}
+
+div.carousel__cell:hover {
+  opacity: 1 !important;
+}
+
 .carousel__cell:nth-child(7n + 1) {
-  background: hsla(0, 100%, 50%, 0.8);
+  /* background: hsla(0, 100%, 50%, 0.8); */
+  background-image: url("assets/Océane.jpg");
+  background-size: cover;
 }
 .carousel__cell:nth-child(7n + 2) {
   background: hsla(40, 100%, 50%, 0.8);
@@ -110,17 +121,47 @@ body {
   visibility: hidden;
 }
 
+.navcarouselbuttons {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  margin: -13% 10% 8% 10%;
+}
+
 .previous-button,
 .next-button {
   color: var(--clr-white);
   background-color: var(--clr-black);
+  border: 1px solid var(--clr-white);
+  height: 10vh;
+  width: 10vw;
 }
 
 .previous-button:hover {
   color: var(--clr-black);
   background-color: var(--clr-grey-300);
+  border: 1px solid var(--clr-white);
 }
 .next-button:hover {
   color: var(--clr-black);
   background-color: var(--clr-grey-300);
+  border: 1px solid var(--clr-white);
+}
+
+.previous-button:active {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+}
+
+.next-button:active {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+}
+
+label {
+  color: var(--clr-white);
 }
