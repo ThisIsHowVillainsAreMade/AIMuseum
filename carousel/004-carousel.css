@@ -67,7 +67,7 @@ div.carousel__cell:hover {
 
 .carousel__cell:nth-child(7n + 1) {
   /* background: hsla(0, 100%, 50%, 0.8); */
-  background-image: url("assets/Océane.jpg");
+  background-image: url("/assets/Océane.jpg");
   background-size: cover;
 }
 .carousel__cell:nth-child(7n + 2) {
