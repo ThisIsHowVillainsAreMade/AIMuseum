@@ -1,3 +1,7 @@
+// SETTING THE VOLUME OF THE AUDIO
+let audio = document.getElementById("r1_audio");
+audio.volume = 0.2;
+
 // SCROLL REVEAL ANIMATION
 
 function scrollReveal() {
