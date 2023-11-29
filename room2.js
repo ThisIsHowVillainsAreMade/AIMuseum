@@ -1,7 +1,5 @@
 function move(e) {
-      window.scrollTo(e.clientX - window.innerWidth /4, e.clientY - window.innerHeight/4);
+      window.scrollTo(e.clientX - window.innerWidth /5, e.clientY - window.innerHeight/5);
   }
-/*function zoom(e) {
-      document.body.classList.toggle('zoomed');
-}*/
+
 console.log("bonjour")
