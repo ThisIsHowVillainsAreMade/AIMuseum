@@ -13,53 +13,55 @@
 }
 
 body {
-  background-color: var(--clr-black);
+  background-color: black;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+section {
+  overflow-x: hidden;
+  display: flex;
+}
+
+.gallery {
+  width: 950vw;
+  max-width: 600vh;
+  height: 100vh;
+  min-width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardTitle {
   /* visibility: hidden; */
-  margin: 0;
-  font-size: var(--fs-400);
-  text-align: left;
   position: absolute;
-  color: var(--clr-black);
+  margin: 0px;
+}
+
+img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .card {
   display: flex;
-  margin: 33vw;
-  width: 35vw;
-  /* height: 53vh; */
-  align-items: flex-start;
+  position: relative;
+  margin: 20vh;
   justify-content: flex-start;
 }
 
-.gallery {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  /* width: 720vw; */
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  align-items: center;
-}
-
 .container {
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
+  margin: auto;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.one {
+  margin-left: 6vh;
 }
