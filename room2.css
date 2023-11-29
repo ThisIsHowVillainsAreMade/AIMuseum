@@ -24,10 +24,19 @@ body{
     width: 200em;
     overflow: hidden;
 }
+.img {
+  transition: transform 0.3s; 
+}
+
+
+.img:hover{
+  transform: scale(1.1); 
+}
 
 .cardTitle {
   color : var(--clr-grey-200);
-  visibility : hidden;
+  opacity: 1;
+  transition: opacity 0.3s; 
 }
 .gallery {
   display: flex;
@@ -38,8 +47,11 @@ body{
 .cardOne{
   margin-left: 10em;
 }
+.cardTwo{
+  margin-right: 4em;
+}
 
-.firstLine {
+.firstLine{
 
   display: flex;
   justify-content: space-between;
@@ -54,20 +66,16 @@ body{
 
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5em;
 }
 .fourthLine {
-
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 10em;
 }
 .fifthLine {
-
   display: flex;
+  justify-content: space-between;
 }
 
-.img{
-  display: flex;
-  
-}
-.drag {
-  cursor: grab;
-}
+
