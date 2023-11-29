@@ -1,18 +1,24 @@
+:root {
+  --clr-black: hsla(0, 0%, 5%, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.rOne {
+  background-color: var(--clr-black);
+}
+
 .rOne-container-gallery {
-  border: 1px solid red;
   display: flex;
   gap: 1.5rem;
   margin: 0 2.5rem 0 2.5rem;
 }
 
 .rOne-column {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -22,4 +28,184 @@
 
 .card {
   background-color: gray;
+  background-position: center;
+  background-size: cover;
+}
+
+.rOne-container-gallery .card1 {
+  height: 11rem;
+  background-image: url("./images/r1_img_1.png");
+}
+.rOne-container-gallery .card2 {
+  height: 22rem;
+  background-image: url("./images/r1_img_2.png");
+}
+
+.rOne-container-gallery .card3 {
+  height: 32rem;
+  background-image: url("./images/r1_img_3.png");
+}
+
+.rOne-container-gallery .card4 {
+  height: 22rem;
+  background-image: url("./images/r1_img_4.png");
+}
+
+.rOne-container-gallery .card5 {
+  height: 11rem;
+  background-image: url("./images/r1_img_5.png");
+}
+
+.rOne-container-gallery .card6 {
+  height: 32rem;
+  background-image: url("./images/r1_img_6.png");
+}
+
+.rOne-container-gallery .card7 {
+  height: 22rem;
+  background-image: url("./images/r1_img_7.png");
+}
+
+.rOne-container-gallery .card8 {
+  height: 11rem;
+  background-image: url("./images/r1_img_8.png");
+}
+
+.rOne-container-gallery .card9 {
+  height: 32rem;
+  background-image: url("./images/r1_img_9.png");
+}
+
+.rOne-container-gallery .card10 {
+  height: 19rem;
+  background-image: url("./images/r1_img_10.png");
+}
+
+.rOne-container-gallery .card11 {
+  height: 17rem;
+  background-image: url("./images/r1_img_11.png");
+}
+
+.rOne-container-gallery .card12 {
+  height: 19rem;
+  background-image: url("./images/r1_img_12.png");
+}
+
+.rOne-container-gallery .card13 {
+  height: 28rem;
+  background-image: url("./images/r1_img_13.png");
+}
+
+.rOne-container-gallery .card14 {
+  height: 19rem;
+  background-image: url("./images/r1_img_14.png");
+}
+
+.rOne-container-gallery .card15 {
+  height: 30rem;
+  background-image: url("./images/r1_img_15.png");
+}
+
+.rOne-container-gallery .card16 {
+  height: 16rem;
+  background-image: url("./images/r1_img_16.png");
+}
+
+.rOne-container-gallery .card17 {
+  height: 19rem;
+  background-image: url("./images/r1_img_1.png");
+}
+
+.rOne-container-gallery .card18 {
+  height: 28rem;
+  background-image: url("./images/r1_img_2.png");
+}
+
+.rOne-container-gallery .card19 {
+  height: 25rem;
+  background-image: url("./images/r1_img_3.png");
+}
+
+.rOne-container-gallery .card20 {
+  height: 21rem;
+  background-image: url("./images/r1_img_4.png");
+}
+
+.rOne-container-gallery .card21 {
+  height: 19rem;
+  background-image: url("./images/r1_img_5.png");
+}
+
+.rOne-container-gallery .card22 {
+  height: 21rem;
+  background-image: url("./images/r1_img_6.png");
+}
+
+.rOne-container-gallery .card23 {
+  height: 25rem;
+  background-image: url("./images/r1_img_7.png");
+}
+
+.rOne-container-gallery .card24 {
+  height: 16rem;
+  background-image: url("./images/r1_img_8.png");
+}
+.rOne-container-gallery .card25 {
+  height: 24rem;
+  background-image: url("./images/r1_img_9.png");
+}
+
+.rOne-container-gallery .card26 {
+  height: 25rem;
+  background-image: url("./images/r1_img_10.png");
+}
+
+.rOne-container-gallery .card27 {
+  height: 19rem;
+  background-image: url("./images/r1_img_11.png");
+}
+
+.rOne-container-gallery .card28 {
+  height: 19rem;
+  background-image: url("./images/r1_img_12.png");
+}
+
+.rOne-container-gallery .card29 {
+  height: 32rem;
+  background-image: url("./images/r1_img_13.png");
+}
+
+.rOne-container-gallery .card30 {
+  height: 32rem;
+  background-image: url("./images/r1_img_14.png");
+}
+
+.rOne-container-gallery .card31 {
+  height: 14rem;
+  background-image: url("./images/r1_img_15.png");
+}
+
+.rOne-container-gallery .card32 {
+  height: 19rem;
+  background-image: url("./images/r1_img_16.png");
+}
+
+.rOne-container-gallery .card33 {
+  height: 14rem;
+  background-image: url("./images/r1_img_1.png");
+}
+
+.rOne-container-gallery .card34 {
+  height: 32rem;
+  background-image: url("./images/r1_img_2.png");
+}
+
+.rOne-container-gallery .card35 {
+  height: 19rem;
+  background-image: url("./images/r1_img_3.png");
+}
+
+.rOne-container-gallery .card36 {
+  height: 14rem;
+  background-image: url("./images/r1_img_4.png");
 }
