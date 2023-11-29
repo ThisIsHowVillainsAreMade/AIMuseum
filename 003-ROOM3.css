@@ -28,8 +28,6 @@ section {
   width: 950vw;
   max-width: 600vh;
   height: 100vh;
-  min-width: 50vw;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
