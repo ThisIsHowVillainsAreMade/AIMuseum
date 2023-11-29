@@ -1,9 +1,4 @@
-// SETTING THE VOLUME OF THE AUDIO
-let audio = document.getElementById("r1_audio");
-audio.volume = 0.2;
-
 // SCROLL REVEAL ANIMATION
-
 function scrollReveal() {
   // Declaring a reveal point 100px from bottom
   const revealPoint = 100;
@@ -14,7 +9,8 @@ function scrollReveal() {
   for (let i = 0; i < revealElements.length; i++) {
     const windowHeight = window.innerHeight;
     const revealTop = revealElements[i].getBoundingClientRect().top;
-    if (revealTop < windowHeight - revealPoint) {
+    const revealBottom = revealElements[i].getBoundingClientRect().bottom;
+    if (revealTop < windowHeight - revealPoint && revealBottom > revealPoint) {
       revealElements[i].classList.add("active");
     } else {
       revealElements[i].classList.remove("active");
