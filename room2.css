@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 :root {
     --clr-white: hsla(0, 0%, 0%, 1);
@@ -19,9 +21,10 @@ body{
     background-color: var(--clr-black);
     margin: 0;
     height: 100em;
-    width: 300em;
-    /*overflow: hidden;*/
+    width: 200em;
+    overflow: hidden;
 }
+
 .cardTitle {
   color : var(--clr-grey-200);
   visibility : hidden;
