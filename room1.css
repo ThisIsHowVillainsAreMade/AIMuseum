@@ -23,13 +23,19 @@
   flex-direction: column;
   gap: 1.5rem;
   flex-basis: 24%;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
 }
 
 .card {
-  background-color: gray;
+  /* background-color: gray; */
   background-position: center;
   background-size: cover;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+.card.active {
+  opacity: 1;
 }
 
 .rOne-container-gallery .card1 {
