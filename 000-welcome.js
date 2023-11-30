@@ -1,9 +1,11 @@
-function zoomCover() {
-    const cover = document.querySelector('.cover');
-
-    cover.classList.add('zoomed');
+function zoomDoor() {
+    const scalingElement = document.querySelector('.door');
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
 
     setTimeout(() => {
-        cover.style.display = 'none';
-    }, 3000); 
+        overlay.style.opacity = '1';
+        scalingElement.style.transform = 'scale(2)';
+    }, 0);
 }
