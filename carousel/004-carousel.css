@@ -14,7 +14,7 @@
 
 * {
   box-sizing: border-box;
-  background-color: var(--clr-black);
+  background-color: var(--clr-grey-100);
 }
 
 body {
@@ -115,6 +115,7 @@ div.carousel__cell:hover {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin: 0 0 0 0;
 }
 
 .inputToHide {
@@ -127,7 +128,7 @@ div.carousel__cell:hover {
   position: relative;
   z-index: 2;
   background: transparent;
-  margin: -13% 10% 8% 10%;
+  margin: -15% 0% 0% 0%;
 }
 
 .previous-button,
@@ -135,8 +136,8 @@ div.carousel__cell:hover {
   color: var(--clr-white);
   background-color: var(--clr-black);
   border: 1px solid var(--clr-white);
-  height: 10vh;
-  width: 10vw;
+  height: 30px;
+  width: 100px;
 }
 
 .previous-button:hover {
@@ -163,5 +164,12 @@ div.carousel__cell:hover {
 }
 
 label {
-  color: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.labelp {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  flex-direction: row-reverse;
 }

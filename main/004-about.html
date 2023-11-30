@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/main/004-about.css" />
+    <link rel="stylesheet" href="/carousel/004-carousel.css" />
   </head>
   <body>
     <header>
       <section class="coverSection"></section>
     </header>
     <main>
+      <!-- About Museum -->
       <section class="aboutMuseumSection">
         <article>
-          <h2>À propos du Musée de l'Intelligence Artificielle</h2>
+          <h2 id="aboutMuseumTitle">
+            À propos du Musée de l'Intelligence Artificielle
+          </h2>
           <p>
             Bienvenue au Musée de l'Intelligence Artificielle, une immersion où
             convergent la créativité humaine et la puissance de l'IA. Ce lieu
@@ -45,9 +49,12 @@
           </p>
         </article>
       </section>
+      <!-- How It Works Section -->
       <section class="howItWorksSection">
         <article>
-          <h2>Comment fonctionne l'Intelligence Artificielle ?</h2>
+          <h2 id="howItWorksTitle">
+            Comment fonctionne l'Intelligence Artificielle ?
+          </h2>
           <h3>
             À la Frontière de l'Innovation : Plongée dans le Monde de
             l'Intelligence Artificielle.
@@ -125,9 +132,10 @@
           </p>
         </article>
       </section>
+      <!-- History of AI Section -->
       <section class="historyOfAiSection">
         <article>
-          <h2>Histoire de l'Intelligence Artificielle</h2>
+          <h2 id="historyOfAiTitle">Histoire de l'Intelligence Artificielle</h2>
           <h3>
             Le Voyage Historique de l'Intelligence Artificielle : Traversée des
             Époques et Émergence Contemporaine
@@ -204,23 +212,72 @@
           </p>
         </article>
       </section>
+      <!-- Carousel Section -->
+      <section class="carouselSection">
+        <article>
+          <h2>Contributeurs au projet du Musée de l'IA</h2>
+          <p>
+            Nous sommes 7 étudiants de la
+            <a
+              href="https://www.wildcodeschool.com/fr-fr/?utm_term=wild%20code%20school&utm_campaign=FR-GGL%20-%20BRAND%20CAMPAIGN&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=130792156467&hsa_ad=629219034671&hsa_src=g&hsa_tgt=kwd-340701497962&hsa_kw=wild%20code%20school&hsa_mt=e&hsa_ver=3&hsa_net=adwords&gad_source=1&gclid=Cj0KCQiA35urBhDCARIsAOU7Qwkf4NMVOAzpMJU9riD2UD3T5oCxTV4sF-wYzPHcv3qC8hm15fvK94caAsqMEALw_wcB"
+              target="_blank"
+              >Wild Code School</a
+            >
+            qui réalisons ce premier projet ensemble. Vous trouverez ci-dessous
+            nos cartes stylisées par l'IA. Chacune d'entre elle contient un lien
+            vers le GitHub et le LinkedIn de chacun d'entre nous.
+          </p>
+        </article>
+
+        <div class="scene">
+          <div class="carousel">
+            <div class="carousel__cell">1</div>
+            <div class="carousel__cell">2</div>
+            <div class="carousel__cell">3</div>
+            <div class="carousel__cell">4</div>
+            <div class="carousel__cell">5</div>
+            <div class="carousel__cell">6</div>
+            <div class="carousel__cell">7</div>
+          </div>
+        </div>
+
+        <div class="carousel-options">
+          <p>
+            <label class="inputToHide">
+              <!-- Cells -->
+              <input
+                class="cells-range"
+                type="range"
+                min="7"
+                max="7"
+                value="7"
+              />
+            </label>
+          </p>
+          <div class="navcarouselbuttons">
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
+          </div>
+          <p class="labelp">
+            <!-- Orientation: -->
+            <label class="inputHorizontal">
+              <input
+                type="radio"
+                name="orientation"
+                value="horizontal"
+                checked
+              />
+              Horizontal
+            </label>
+            <label class="inputVertical">
+              <input type="radio" name="orientation" value="vertical" />
+              Vertical
+            </label>
+          </p>
+        </div>
+        <script src="/carousel/004-carousel.js"></script>
+      </section>
     </main>
-    <section class="carouselSection">
-      <article>
-        <h2>Contributeurs au projet du Musée de l'IA</h2>
-        <p>
-          Nous sommes 7 étudiants de la
-          <a
-            href="https://www.wildcodeschool.com/fr-fr/?utm_term=wild%20code%20school&utm_campaign=FR-GGL%20-%20BRAND%20CAMPAIGN&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=130792156467&hsa_ad=629219034671&hsa_src=g&hsa_tgt=kwd-340701497962&hsa_kw=wild%20code%20school&hsa_mt=e&hsa_ver=3&hsa_net=adwords&gad_source=1&gclid=Cj0KCQiA35urBhDCARIsAOU7Qwkf4NMVOAzpMJU9riD2UD3T5oCxTV4sF-wYzPHcv3qC8hm15fvK94caAsqMEALw_wcB"
-            target="_blank"
-            >Wild Code School</a
-          >
-          qui réalisons ce premier projet ensemble. Vous trouverez ci-dessous
-          nos cartes stylisées par l'IA. Chacune d'entre elle contient un lien
-          vers le GitHub et le LinkedIn de chacun d'entre nous.
-        </p>
-      </article>
-    </section>
   </body>
   <script src="/main/004-about.js"></script>
 </html>
