@@ -19,63 +19,79 @@
   
 body{
     background-color: var(--clr-black);
-    height: 100rem;
+    height: 150rem;
     width: 150rem;
-    /*overflow: hidden;*/
+    overflow: hidden;
+}
+
+.container{
+  transition: transform 0.3s ease-out;
+}
+.allImages{
+  display: flex;
+  position: relative;
 }
 
 
-.cardTitle {
-  color: var(--clr-grey-200);
+
+.text{
   opacity: 0;
-  position: absolute;
-  font-size: var(--fs-400);
-}
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-
+} 
+.images{
+  position: relative;
+  transition: transform 0.3s ease;  
+  transition: filter 0.3s ease;  
 }
 
-.cardOne{
-  margin-left: 10rem;
-}
-.cardTwo{
-  margin-right: 4rem;
-}
-.cardTen{
-  margin-right: 15rem;
-}
-.cardSeven{
-  margin-left: 60rem;
+.image:hover{
+  transform: scale(1.1) ;
+  filter: blur(0.2rem);
 }
 
-.firstLine{
-
-  display: flex;
-  justify-content: space-between;
+ #image1{
+  position: relative;
+  transform: translate(10%,50%);
 }
-.secondLine {
-
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 5rem;
-
+ #image2{
+  position: relative;
+  transform: translate(800%,50%);
+ } 
+ #image3{
+  position: relative;
+  transform: translate(400%,200%);
+  
 }
-.thirdLine {
-
-  display: flex;
-  justify-content: space-evenly;
-
-}
-.fourthLine {
-  display: flex;
-  justify-content: space-between;
+#image4{
+  position: relative;
+  transform: translate(150%,400%);
 
 }
-.fifthLine {
-  display: flex;
-  justify-content: space-between;
+#image5{
+  position: relative;
+  transform: translate(400%,400%);
 }
+
+#image6{
+  position: relative;
+  transform: translate(400%,650%);
+}
+
+#image7{
+  position: relative;
+  transform: translate(200%,-90%);
+}
+
+#image8{
+  position: relative;
+  transform: translate(-370%,200%);
+}
+
+#image9{
+  position: relative;
+  transform: translate(-750%,650%);
+}
+#image10{
+  position: relative;
+  transform: translate(-390%,10%);
+} 
 
