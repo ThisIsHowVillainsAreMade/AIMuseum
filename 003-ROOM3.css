@@ -65,7 +65,8 @@ main {
 }
 
 .img:hover {
-  filter: blur(0.2rem);
+  width: 120%;
+  filter: blur(0.3rem);
   transform: scale(2);
 }
 
