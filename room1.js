@@ -1,11 +1,11 @@
 // SCROLL REVEAL ANIMATION
 function scrollReveal() {
-  // Declaring a reveal point 100px from bottom
+  // Declaring a reveal point 100px from top & bottom of the window
   const revealPoint = 100;
-  // Declaring all cards as element to be revealed
-  const revealElements = document.querySelectorAll(".card");
+  // Declaring all pictures as element to be revealed
+  const revealElements = document.querySelectorAll(".background");
 
-  // Loop on all cards, to check if the top of the element is inside the reveal area. If this is the case, the active class will be added to the element.
+  // Loop on all cards, to check if the top or the bottom of the element is inside the reveal area. If this is the case, the active class will be added to the element.
   for (let i = 0; i < revealElements.length; i++) {
     const windowHeight = window.innerHeight;
     const revealTop = revealElements[i].getBoundingClientRect().top;
