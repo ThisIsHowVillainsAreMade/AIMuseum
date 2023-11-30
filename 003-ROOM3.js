@@ -1,27 +1,31 @@
-const scrollContainer = document.querySelector("section");
+let images = [...document.querySelectorAll(".img")];
+let container = document.querySelector(".container");
+let containerWidth;
+let imagesWidth;
+let current = 0;
+let target = 0;
+let ease = 0.03;
 
-scrollContainer.addEventListener("wheel", (evt) => {
-  evt.preventDefault();
-  scrollContainer.scrollLeft += evt.deltaY;
-});
+function lerp(start, end, t) {
+  return start * (1 - t) + end * t;
+}
 
-const newContainer = document.querySelector(".container");
-const newGallery = document.querySelector(".gallery");
+function setTransform(el, transform) {
+  el.style.transform = transform;
+}
 
-const cloned = newGallery.cloneNode(true);
-newContainer.appendChild(cloned);
-cloned.style.right = newGallery.offsetWidth + "px";
+function init() {
+  containerWidth = container.getBoundingClientRect().width;
+  imagesWidth = containerWidth / images.length;
+  document.body.style.height = "4100px";
+}
 
-newContainer.style.display = "flex";
+function animate() {
+  current = parseFloat(lerp(current, target, ease)).toFixed(4);
+  target = window.scrollY;
+  setTransform(container, `translateX(-${current}px)`);
+  requestAnimationFrame(animate);
+}
 
-const threshold = 120;
-
-window.addEventListener("scroll", () => {
-  const halfWidth = newGallery.clientWidth;
-
-  if (window.scrollX > halfWidth) {
-    window.scrollTo(0, window.scrollX - halfWidth);
-  } else if (window.scrollX < threshold) {
-    window.scrollTo(0, halfWidth + window.scrollX);
-  }
-});
+init();
+animate();
