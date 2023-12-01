@@ -33,7 +33,7 @@ function animateImages() {
   let intersectionRatioValue;
 
   images.forEach((images, idx) => {
-    intersectionRatioValue = ratio - idx * 0.9;
+    intersectionRatioValue = ratio - idx * 0.8;
     setTransform(images, `translateX(${intersectionRatioValue * 50}px)`);
   });
 }

@@ -1,15 +1,15 @@
 :root {
-  --clr-white: hsla(0, 0%, 0%, 1);
+  --clr-white: hsla(0, 0%, 97%, 1);
   --clr-grey-100: hsla(0, 0%, 90%, 1);
   --clr-grey-200: hsla(0, 0%, 70%, 1);
   --clr-grey-300: hsla(0, 0%, 50%, 1);
   --clr-grey-400: hsla(0, 0%, 30%, 1);
   --clr-grey-500: hsla(0, 0%, 12%, 1);
   --clr-black: hsla(0, 0%, 5%, 1);
-  --fs-200: 24px;
-  --fs-300: 32px;
-  --fs-400: 40px;
-  --fs-600: 64px;
+  --fs-200: 1.5rem;
+  --fs-300: 2rem;
+  --fs-400: 2.5rem;
+  --fs-600: 4rem;
 }
 
 body {
@@ -65,7 +65,7 @@ main {
 }
 
 .img:hover {
-  width: 120%;
+  width: 130%;
   filter: blur(0.3rem);
   transform: scale(2);
 }
@@ -76,9 +76,10 @@ main {
 }
 
 .Title {
+  font-size: var(--fs-200);
   left: 10px;
   position: absolute;
-  color: white;
+  color: var(--clr-white);
   z-index: 2;
   opacity: 0;
 }
