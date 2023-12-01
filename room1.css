@@ -57,11 +57,11 @@
   }
 }
 
-.card {
+.rOne .card {
   overflow: hidden; /* to avoid pictures enlargment on hover */
 }
 
-.background {
+.rOne .background {
   /* picture added as background */
   opacity: 0; /* for scroll reveal */
   background-position: center;
@@ -71,17 +71,17 @@
   transition: 0.9s ease; /* to return to initial state after hover & for scroll reveal */
 }
 
-.background.active {
+.rOne .background.active {
   opacity: 1; /* for scroll reveal */
   transition: 0.9s ease; /* for scroll reveal */
 }
 
-.background:hover {
+.rOne .background:hover {
   transform: scale(1.1);
   transition: 0.9s ease;
 }
 
-.card h2 {
+.rOne .card h2 {
   opacity: 0; /* hide until hover */
   backdrop-filter: blur(2px); /* to get blurred background on hover */
   width: 100%;
@@ -93,7 +93,7 @@
   transition: 1s ease; /* return to original state after hover */
 }
 
-.card:hover h2 {
+.rOne .card:hover h2 {
   opacity: 1;
   /* below: compensation of background transform : scale(1.1) */
   transform: scale(calc(1 / 1.1));
@@ -102,7 +102,7 @@
 }
 
 .rOne-container-gallery .card1 {
-  height: 11rem;
+  height: 13rem;
 }
 
 .rOne-container-gallery .background1 {
@@ -110,7 +110,7 @@
 }
 
 .rOne-container-gallery .card2 {
-  height: 22rem;
+  height: 21rem;
 }
 
 .rOne-container-gallery .background2 {
@@ -118,7 +118,7 @@
 }
 
 .rOne-container-gallery .card3 {
-  height: 32rem;
+  height: 31rem;
 }
 
 .rOne-container-gallery .background3 {
@@ -126,7 +126,7 @@
 }
 
 .rOne-container-gallery .card4 {
-  height: 22rem;
+  height: 23rem;
 }
 
 .rOne-container-gallery .background4 {
@@ -134,7 +134,7 @@
 }
 
 .rOne-container-gallery .card5 {
-  height: 11rem;
+  height: 17rem;
 }
 
 .rOne-container-gallery .background5 {
@@ -142,7 +142,7 @@
 }
 
 .rOne-container-gallery .card6 {
-  height: 32rem;
+  height: 29rem;
 }
 
 .rOne-container-gallery .background6 {
@@ -158,7 +158,7 @@
 }
 
 .rOne-container-gallery .card8 {
-  height: 11rem;
+  height: 14rem;
 }
 
 .rOne-container-gallery .background8 {
@@ -166,7 +166,7 @@
 }
 
 .rOne-container-gallery .card9 {
-  height: 32rem;
+  height: 25rem;
 }
 
 .rOne-container-gallery .background9 {
@@ -357,7 +357,7 @@
 }
 
 .rOne-container-gallery .card33 {
-  height: 14rem;
+  height: 16rem;
 }
 
 .rOne-container-gallery .background33 {
@@ -365,7 +365,7 @@
 }
 
 .rOne-container-gallery .card34 {
-  height: 32rem;
+  height: 30rem;
 }
 
 .rOne-container-gallery .background34 {
