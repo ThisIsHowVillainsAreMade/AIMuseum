@@ -53,6 +53,7 @@ body {
 #road {
   z-index: 3;
   top: -200px;
+  object-fit: cover;
 }
 
 #mountain {
@@ -65,6 +66,7 @@ body {
 
 #sky {
   z-index: 0;
+  height: 200svh;
 }
 
 #moon {
@@ -116,7 +118,7 @@ body {
   padding-right: 70px;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   #road {
     height: 167vh;
     object-fit: contain;
@@ -128,7 +130,7 @@ body {
 
   #aivolution {
     font-size: 10rem;
-    margin-bottom: 100%;
+    margin-top: 60vh;
   }
 }
 
@@ -140,11 +142,51 @@ body {
 
   #sky {
     height: 75svh;
-    /* object-fit: ; */
   }
 
   #aivolution {
     font-size: 5rem;
     margin-bottom: 100%;
+  }
+} */
+
+/* TABLETTE */
+@media screen and (max-width: 1024px) {
+  /* #road {
+    height: 167svh;
+    object-fit: contain;
+  } */
+
+  /* #sky {
+    height: 100svh;
+    object-fit: cover;
+  } */
+
+  #aivolution {
+    font-size: 10rem;
+    margin-top: 60svh;
+  }
+
+  .welcome {
+    margin-top: -26svh;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 400px) {
+  #road {
+    height: 118svh;
+    object-fit: contain;
+  }
+
+  #sky {
+    height: 80svh;
+    object-fit: cover;
+  }
+
+  #aivolution {
+    font-size: 5rem;
+    margin-top: 60svh;
+    margin-bottom: 0;
   }
 }
