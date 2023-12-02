@@ -158,10 +158,6 @@ div.carousel__cell:hover {
   border: 1px solid var(--clr-white);
 }
 
-/* label {
-  color: var(--clr-black);
-} */
-
 .labelp {
   color: var(--clr-black);
   display: flex;

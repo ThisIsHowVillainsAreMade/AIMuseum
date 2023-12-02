@@ -17,6 +17,5 @@ body {
   color: var(--clr-black);
   min-height: 100svh;
   max-width: 100svw;
-  /* margin-left: 10svw;
-  margin-right: 10svw; */
+  margin: 0 1svw 0 1svw;
 }

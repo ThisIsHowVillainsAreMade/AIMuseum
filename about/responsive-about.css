@@ -1,0 +1,30 @@
+/* TABLETTE */
+@media screen and (max-width: 1024px) {
+  #aivolution {
+    font-size: 10rem;
+    margin-top: 60svh;
+  }
+
+  .mainAbout {
+    margin-top: -26svh;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 400px) {
+  #robots {
+    height: 118svh;
+    object-fit: contain;
+  }
+
+  #sky {
+    height: 80svh;
+    object-fit: cover;
+  }
+
+  #aivolution {
+    font-size: 5rem;
+    margin-top: 60svh;
+    margin-bottom: 0;
+  }
+}
