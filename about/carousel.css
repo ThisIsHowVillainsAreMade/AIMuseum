@@ -1,0 +1,171 @@
+.scene {
+  border: 1px solid #ccc;
+  margin: 40px 0;
+  position: relative;
+  z-index: 3;
+  width: 210px;
+  height: 140px;
+  margin: 80px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+
+div.carousel__cell {
+  opacity: 0.5 !important;
+}
+
+div.carousel__cell:hover {
+  opacity: 1 !important;
+}
+
+.carousel__cell:nth-child(7n + 1) {
+  /* background: hsla(0, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/oceane-what_a_hummingbird_abstract_art_green_generosity_headstrong_--a_211ba56d-893a-4d60-9353-3cc448fd68c2.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 2) {
+  /* background: hsla(40, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/samir-what_a_hummingbird_image_absctract_art_represent_color_black_ca_da800bd3-a838-4326-8256-cc76faaa2f9e.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 3) {
+  /* background: hsla(80, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/pauline-what_a_hummingbird_image_absctract_art_represent_color_blue_att_e5c5b9f5-0fba-4a66-ab75-ad8393a4bcaf.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 4) {
+  /* background: hsla(120, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/lyes-what_a_hummingbird_image_absctract_art_represent_color_blue_sha_cd907301-e8cb-4883-b5a0-dc978b3a77e6.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 5) {
+  /* background: hsla(160, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/hamidou-what_a_hummingbird_image_absctract_art_represent_color_black_in_78f2d9ed-2652-4b00-b1e6-e462be5f9b4e.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 6) {
+  /* background: hsla(200, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/lucien-what_a_hummingbird_image_absctract_art_represent_color_orange_p_f9d4ddc2-590e-4b6b-bfc5-0bf313d3151d.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 0) {
+  /* background: hsla(240, 100%, 50%, 0.8); */
+  background-image: url("/assets/carousel/yohan-what_a_hummingbird_image_absctract_art_represent_color_Abyssal__1cb7932c-973e-4abb-8d6f-c86e32527097.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 0 0;
+}
+
+.inputToHide {
+  visibility: hidden;
+}
+
+.navcarouselbuttons {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  margin: -15% 0% 0% 0%;
+}
+
+.previous-button,
+.next-button {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  border: 1px solid var(--clr-white);
+  height: 30px;
+  width: 100px;
+}
+
+.previous-button:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-grey-300);
+  border: 1px solid var(--clr-white);
+}
+.next-button:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-grey-300);
+  border: 1px solid var(--clr-white);
+}
+
+.previous-button:active {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+}
+
+.next-button:active {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+}
+
+/* label {
+  color: var(--clr-black);
+} */
+
+.labelp {
+  color: var(--clr-black);
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
