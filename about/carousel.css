@@ -34,7 +34,7 @@
 }
 
 div.carousel__cell {
-  opacity: 0.5 !important;
+  opacity: 0.7 !important;
 }
 
 div.carousel__cell:hover {
@@ -110,7 +110,6 @@ div.carousel__cell:hover {
   text-align: center;
   position: relative;
   z-index: 2;
-  margin: 0 0 0 0;
 }
 
 .inputToHide {
@@ -139,8 +138,8 @@ div.carousel__cell:hover {
   color: var(--clr-white);
   background-color: var(--clr-black);
   border: 1px solid var(--clr-white);
-  height: 30px;
-  width: 100px;
+  height: 5svh;
+  width: 7svw;
 }
 
 .previous-button:hover {

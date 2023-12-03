@@ -18,4 +18,9 @@ body {
   min-height: 100svh;
   max-width: 100svw;
   margin: 0 1svw 0 1svw;
+  overflow: -moz-scrollbars-none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
