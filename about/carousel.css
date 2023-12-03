@@ -137,20 +137,27 @@ div.carousel__cell:hover {
 .next-button {
   color: var(--clr-white);
   background-color: var(--clr-black);
-  border: 1px solid var(--clr-white);
-  height: 5svh;
-  width: 7svw;
+  border: 1px solid var(--clr-black);
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.15),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.108),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.089),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.075),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.061),
+    100px 100px 80px rgba(0, 0, 0, 0.042);
 }
 
 .previous-button:hover {
   color: var(--clr-black);
   background-color: var(--clr-grey-300);
-  border: 1px solid var(--clr-white);
+  border: 1px solid var(--clr-grey-300);
 }
 .next-button:hover {
   color: var(--clr-black);
   background-color: var(--clr-grey-300);
-  border: 1px solid var(--clr-white);
+  border: 1px solid var(--clr-grey-300);
 }
 
 .previous-button:active {
