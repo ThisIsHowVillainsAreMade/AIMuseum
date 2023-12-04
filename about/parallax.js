@@ -6,12 +6,12 @@ let aivolution = document.getElementById("aivolution");
 
 let modalAbout = document.getElementById("about-page");
 
-window.addEventListener("scroll", () => {
-  let { scrollY } = window;
+modalAbout.addEventListener("scroll", () => {
+  let { scrollTop } = modalAbout;
 
-  (robots.style.top = 100), 5 * scrollY + "px";
-  moutain.style.top = 150 + 0.05 * scrollY + "px";
-  moon.style.left = 1.1 * scrollY + "px";
-  sky.style.top = -1.2 * scrollY + "px";
-  aivolution.style.top = 300 + -3 * scrollY + "px";
+  robots.style.top = -200 + 0.1 * scrollTop + "px";
+  moutain.style.top = 150 + 0.05 * scrollTop + "px";
+  moon.style.left = 1.1 * scrollTop + "px";
+  sky.style.top = -1.2 * scrollTop + "px";
+  aivolution.style.top = 500 + -5 * scrollTop + "px";
 });
