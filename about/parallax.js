@@ -12,5 +12,4 @@ window.addEventListener("scroll", () => {
   moon.style.left = 1.1 * scrollY + "px";
   sky.style.top = -1.2 * scrollY + "px";
   aivolution.style.top = 300 + -3 * scrollY + "px";
-  // aivolution.style.top = 120 + -1.5 * scrollY + "px";
 });

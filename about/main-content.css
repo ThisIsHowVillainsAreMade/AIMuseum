@@ -14,13 +14,7 @@
 
 .mainAbout article {
   margin: 0 5% 0 5%;
-  /* opacity: 0.7; */
 }
-
-/* Opacity, we see better in hover animation */
-/* .mainAbout article:hover {
-  opacity: 1;
-} */
 
 .aboutMuseumSection,
 .howItWorksSection,
@@ -39,33 +33,6 @@
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.061),
     100px 100px 80px rgba(0, 0, 0, 0.042);
 }
-
-/* Animation scale dont looks so good. */
-
-/* .aboutMuseumSection:hover {
-  animation: scaleAnimationAbout 1s ease-in-out;
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-  background-attachment: fixed;
-}
-
-.howItWorksSection:hover {
-  animation: scaleAnimationAbout 1s ease-in-out;
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
-.historyOfAiSection:hover {
-  animation: scaleAnimationAbout 1s ease-in-out;
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
-.contributorSection:hover {
-  animation: scaleAnimationAbout 1s ease-in-out;
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-} */
 
 .aboutMuseumSection h2 {
   background-image: url("/assets/aboutImg/lilgirl.png");
