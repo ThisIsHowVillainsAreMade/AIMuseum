@@ -10,12 +10,14 @@
   box-sizing: border-box;
 }
 
-html {
+/*for smooth scroll animation */
+/* html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+} */
+
+.rOne {
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
-  /*for smooth scroll animation */
-  /* overflow-y: scroll; */
-  /*for smooth scroll animation */
 }
 
 .title-s {
