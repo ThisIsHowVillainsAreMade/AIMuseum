@@ -1,3 +1,16 @@
+/* #about-page {
+  background-color: var(--clr-grey-100);
+  color: var(--clr-black);
+  min-height: 80svh;
+  max-width: 80svw;
+  margin: 0 1svw 0 1svw;
+  overflow: -moz-scrollbars-none;
+} */
+
+#about-page::-webkit-scrollbar {
+  display: none;
+}
+
 .mainAbout {
   color: var(--clr-black);
   text-align: justify;
@@ -20,7 +33,7 @@
 .howItWorksSection,
 .historyOfAiSection,
 .contributorSection {
-  background-color: white;
+  background-color: var(--clr-white);
   border: solid 1px;
   border-radius: 30px;
   margin: 3svh 0 3svh 0;
@@ -32,6 +45,9 @@
     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.075),
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.061),
     100px 100px 80px rgba(0, 0, 0, 0.042);
+  /* display: flex;
+  flex-direction: column;
+  gap: 30rem; */
 }
 
 .aboutMuseumSection h2 {
@@ -69,3 +85,9 @@
 .carouselSection {
   margin-bottom: 5svh;
 }
+
+/* TESTS */
+
+/* * {
+  background-color: red;
+} */
