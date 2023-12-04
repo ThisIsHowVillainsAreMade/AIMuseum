@@ -41,7 +41,7 @@ body {
   height: 70%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -72,12 +72,27 @@ body {
 }
 
 .titlecards {
+  font-size: var(--fs-300);
+  left: 10px;
+  position: absolute;
+  color: var(--clr-white);
+  z-index: 2;
+  opacity: 0;
+}
+
+.textcards {
+  top: 12em;
   font-size: var(--fs-200);
   left: 10px;
   position: absolute;
   color: var(--clr-white);
   z-index: 2;
   opacity: 0;
+}
+
+.card:hover .textcards {
+  opacity: 1;
+  transition: 1s ease;
 }
 
 @media screen and (min-width: 100px) and (max-width: 700px) {
@@ -106,6 +121,9 @@ body {
   }
   .card {
     margin: 7em;
-    width: 415px;
+    width: 369px;
+  }
+  .textcards {
+    top: 8em;
   }
 }
