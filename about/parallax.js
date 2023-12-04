@@ -4,6 +4,8 @@ let sky = document.getElementById("sky");
 let moon = document.getElementById("moon");
 let aivolution = document.getElementById("aivolution");
 
+let modalAbout = document.getElementById("about-page");
+
 window.addEventListener("scroll", () => {
   let { scrollY } = window;
 
