@@ -1,5 +1,5 @@
 function move(e) {
-      window.scrollTo(1.5*e.clientX - window.innerWidth / 1.1, 2.5*e.clientY - window.innerHeight / 1.1);
+      window.scrollTo(1.5*e.clientX - window.innerWidth / 1.05, 2*e.clientY - window.innerHeight / 1.05);
       
 }
 /*const container = document.getElementById('container');
