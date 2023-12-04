@@ -7,5 +7,10 @@ function zoomDoor() {
     setTimeout(() => {
         overlay.style.opacity = '1';
         scalingElement.style.transform = 'scale(2)';
-    }, 0);
-}
+    
+
+        setTimeout(() => {
+        window.location.href = "000-wNextPage.html" ;
+        }, 1500); 
+        // Mettre le html de la ROOM 1
+    }, 0)}
