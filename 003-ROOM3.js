@@ -1,5 +1,5 @@
-let images = [...document.querySelectorAll(".img")];
-let container = document.querySelector(".container");
+let images = [...document.querySelectorAll(".imagescards")];
+let container = document.querySelector(".bigcontainer");
 let containerWidth;
 let imagesWidth;
 let current = 0;
@@ -17,7 +17,6 @@ function setTransform(el, transform) {
 function init() {
   containerWidth = container.getBoundingClientRect().width;
   imagesWidth = containerWidth / images.length;
-  document.body.style.height = "4150px";
 }
 
 function animate() {

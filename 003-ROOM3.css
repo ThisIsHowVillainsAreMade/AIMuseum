@@ -13,6 +13,7 @@
 }
 
 body {
+  height: 4150px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,23 +21,18 @@ body {
   overscroll-behavior: none;
 }
 
-main {
+.biggercontainer {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
 }
 
-.container {
+.bigcontainer {
   position: absolute;
   top: 0;
   width: 4800px;
   height: 100%;
-}
-
-.Title {
-  position: absolute;
-  color: white;
 }
 
 .gallery {
@@ -57,29 +53,59 @@ main {
   align-items: center;
 }
 
-.img {
+.imagescards {
   position: absolute;
   width: 100%;
   overflow: hidden;
   transition: 0.4s ease;
 }
 
-.img:hover {
+.imagescards:hover {
   width: 130%;
   filter: blur(0.3rem);
   transform: scale(2);
 }
 
-.card:hover .Title {
+.card:hover .titlecards {
   opacity: 1;
   transition: 1s ease;
 }
 
-.Title {
+.titlecards {
   font-size: var(--fs-200);
   left: 10px;
   position: absolute;
   color: var(--clr-white);
   z-index: 2;
   opacity: 0;
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  body {
+    height: 3050px;
+  }
+
+  .biggercontainer {
+    height: 100svh;
+  }
+  .card {
+    margin: 1em;
+    width: 320px;
+  }
+  .gallery {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  body {
+    height: 5125px;
+  }
+  .gallery {
+    justify-content: flex-start;
+  }
+  .card {
+    margin: 7em;
+    width: 415px;
+  }
 }
