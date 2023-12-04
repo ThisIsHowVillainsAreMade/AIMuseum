@@ -1,7 +1,8 @@
 /* TABLETTE */
 @media screen and (max-width: 1024px) {
   #aivolution {
-    font-size: 10rem;
+    height: 40svh;
+    font-size: 5rem;
     margin-top: 60svh;
   }
 
@@ -13,7 +14,7 @@
 /* MOBILE */
 @media screen and (max-width: 400px) {
   #robots {
-    height: 118svh;
+    height: 104svh;
     object-fit: contain;
   }
 
@@ -23,7 +24,8 @@
   }
 
   #aivolution {
-    font-size: 5rem;
+    height: 1svh;
+    font-size: 2.5rem;
     margin-top: 60svh;
     margin-bottom: 0;
   }
