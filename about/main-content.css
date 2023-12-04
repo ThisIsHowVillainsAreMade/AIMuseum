@@ -25,7 +25,10 @@
 }
 
 .mainAbout article {
-  padding: 2rem 6rem;
+  padding: 3% 6%;
+  text-align: justify;
+  max-width: 90%;
+  margin: auto;
 }
 /*  */
 .aboutSubSection {
@@ -60,10 +63,10 @@
 .sectionBanner h2 {
   z-index: 21;
   position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .carouselSection {
