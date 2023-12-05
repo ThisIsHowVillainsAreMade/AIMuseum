@@ -13,6 +13,7 @@
 }
 
 body {
+  font-family: "SF-Pro-Display";
   height: 4150px;
   margin: 0;
   padding: 0;
@@ -64,9 +65,9 @@ body {
 }
 
 .imagescards:hover {
-  width: 130%;
   filter: blur(0.3rem);
-  transform: scale(1);
+  transform: scale(1.5);
+  transform-origin: center;
 }
 
 .card:hover .titlecards {
