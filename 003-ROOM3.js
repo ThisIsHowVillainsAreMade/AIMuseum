@@ -43,10 +43,25 @@ animate();
 document.querySelectorAll(".imagescards").forEach((image) => {
   image.onclick = () => {
     document.querySelector(".popup-image").style.display = "block";
-    document.querySelector(".popup-image img").src = image.getAttribute("src");
+    document.querySelector(".popup-image .popup-pic").src =
+      image.getAttribute("src");
+    const textCardContent =
+      image.parentElement.querySelector(".textcards").textContent;
+    document.querySelector(".popup-image .textcards-popup").textContent =
+      textCardContent;
+    const titleContent =
+      image.parentElement.querySelector(".titlecards").textContent;
+    document.querySelector(".popup-image .popup-title").textContent =
+      titleContent;
+    setTimeout(() => {
+      document.querySelector(".popup-image").classList.add("visible");
+    });
   };
 });
 
-document.querySelector(".popup-image button").onclick = () => {
-  document.querySelector(".popup-image").style.display = "none";
+document.querySelector(".popup-image .popup-button").onclick = () => {
+  document.querySelector(".popup-image").classList.remove("visible");
+  setTimeout(() => {
+    document.querySelector(".popup-image").style.display = "none";
+  }, 200);
 };
