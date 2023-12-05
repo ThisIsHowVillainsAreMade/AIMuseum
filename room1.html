@@ -12,7 +12,25 @@
     <link href="room1.css" rel="stylesheet" type="text/css" />
     <title>Salle 1</title>
   </head>
+
   <body class="rOne">
+    <!-- MODAL -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-body">
+        <h2 class="modal-title">Titre</h2>
+        <p class="modal-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <button class="modal-closebutton">Fermer</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- NAVIGATION -->
     <section id="navigation-section" class="navigation-section">
       <!-- about & form page + blurred background -->
       <div id="blur-background" class="blur-background">
@@ -378,8 +396,9 @@
       </section>
     </main>
 
-    <!-- <div id="revealPoint">Reveal Point</div> -->
-    <script src="room1.js"></script>
+    <!-- SCRIPTS -->
+    <script src="room1-animation.js"></script>
+    <script src="room1-cards.js"></script>
     <script src="/navigation.js"></script>
     <script src="/about/parallax.js"></script>
     <script src="/about/carousel.js"></script>
