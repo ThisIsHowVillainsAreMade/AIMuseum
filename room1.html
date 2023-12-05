@@ -1,4 +1,5 @@
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="/about/main-content.css" />
     <link rel="stylesheet" href="/about/carousel.css" />
     <link rel="stylesheet" href="/about/responsive-about.css" />
-    <title>navigation</title>
+    <link href="room1.css" rel="stylesheet" type="text/css" />
+    <title>Salle 1</title>
   </head>
-  <body>
+  <body class="rOne">
     <section id="navigation-section" class="navigation-section">
       <!-- about & form page + blurred background -->
       <div id="blur-background" class="blur-background">
@@ -360,20 +362,24 @@
       </nav>
     </section>
 
-    <!-- main grid 
-        <div class="grid">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+    <!-- GALLERY -->
+    <main class="rOne js-scroll">
+      <section class="rOne-container-gallery">
+        <div class="rOne-column column1">
+          <!-- <div class="card card1">
+            <div class="background background1">
+              <h2 class="title-s">Lorem Ipsum</h2>
+            </div>
+          </div> -->
         </div>
-        (can be removed)-->
+        <div class="rOne-column column2"></div>
+        <div class="rOne-column column3"></div>
+        <div class="rOne-column column4"></div>
+      </section>
+    </main>
 
-    <!-- END -->
+    <!-- <div id="revealPoint">Reveal Point</div> -->
+    <script src="room1.js"></script>
     <script src="/navigation.js"></script>
     <script src="/about/parallax.js"></script>
     <script src="/about/carousel.js"></script>
