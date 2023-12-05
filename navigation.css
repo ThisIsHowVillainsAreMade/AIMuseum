@@ -8,11 +8,12 @@ body.no-scroll {
 }
 
 .navigation-section {
-  position: relative;
-  display: flex;
-  background-color: #181616;
-  min-height: 100vh;
-  font-family: "SF-Pro-Display";
+  position: absolute;
+  z-index: 2;
+  /* display: flex; */
+  /* background-color: #181616; */
+  /* min-height: 100vh; */
+  /* font-family: "SF-Pro-Display"; */
 }
 
 /* CONTENT 
