@@ -23,18 +23,7 @@ function animate() {
   current = parseFloat(lerp(current, target, ease)).toFixed(2);
   target = window.scrollY;
   setTransform(container, `translateX(-${current}px)`);
-  animateImages();
   requestAnimationFrame(animate);
-}
-
-function animateImages() {
-  let ratio = current / imagesWidth;
-  let intersectionRatioValue;
-
-  images.forEach((images, idx) => {
-    intersectionRatioValue = ratio - idx * 0.8;
-    setTransform(images, `translateX(${intersectionRatioValue * 50}px)`);
-  });
 }
 
 init();
