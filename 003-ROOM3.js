@@ -23,8 +23,30 @@ function animate() {
   current = parseFloat(lerp(current, target, ease)).toFixed(2);
   target = window.scrollY;
   setTransform(container, `translateX(-${current}px)`);
+  animateImages();
   requestAnimationFrame(animate);
+}
+
+function animateImages() {
+  let ratio = current / imagesWidth;
+  let intersectionRatioValue;
+
+  images.forEach((images, idx) => {
+    intersectionRatioValue = ratio - (idx - 0.4);
+    setTransform(images, `translateX(${intersectionRatioValue * 35}px)`);
+  });
 }
 
 init();
 animate();
+
+document.querySelectorAll(".imagescards").forEach((image) => {
+  image.onclick = () => {
+    document.querySelector(".popup-image").style.display = "block";
+    document.querySelector(".popup-image img").src = image.getAttribute("src");
+  };
+});
+
+document.querySelector(".popup-image button").onclick = () => {
+  document.querySelector(".popup-image").style.display = "none";
+};

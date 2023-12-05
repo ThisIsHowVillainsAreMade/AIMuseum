@@ -14,7 +14,7 @@
 
 body {
   font-family: "SF-Pro-Display";
-  height: 4150px;
+  height: 4200px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -83,22 +83,8 @@ body {
   opacity: 0;
 }
 
-.textcards {
-  margin: 0.3em;
-  font-size: var(--fs-200);
-  color: var(--clr-white);
-  z-index: 2;
-  opacity: 0;
-}
-
-.textcards.titlecards {
+.titlecards {
   z-index: 1;
-  background-color: var(--clr-grey-200);
-}
-
-.card:hover .textcards {
-  opacity: 1;
-  transition: 1s ease;
 }
 
 @media screen and (min-width: 100px) and (max-width: 700px) {
@@ -129,12 +115,52 @@ body {
     margin: 7em;
     width: 369px;
   }
-  .textcards {
-    top: 8em;
-  }
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image.textcards-popup {
+  position: absolute;
+  top: 20em;
+  left: 50em;
+  font-size: var(--fs-200);
+  color: var(--clr-white);
+  z-index: 100;
+  opacity: 0;
+}
+
+.popup-image button {
+  padding: 0.5em;
+  position: absolute;
+  top: 20em;
+  left: 50em;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 600px;
+  object-fit: cover;
 }
 
 .card.one {
+  margin-left: 16em;
   height: 70%;
 }
 
