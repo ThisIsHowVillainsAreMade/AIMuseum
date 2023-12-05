@@ -18,16 +18,17 @@
 
 .rOne {
   scroll-behavior: smooth;
+  background-color: var(--clr-black);
+  position: relative;
+  min-height: 100vh;
+  font-family: "SF-Pro-Display";
+  z-index: 1;
 }
 
 .title-s {
   font-size: var(--fs-300);
   font-weight: 750;
   color: var(--clr-grey-100);
-}
-
-.rOne {
-  background-color: var(--clr-black);
 }
 
 /* .js-scroll {
