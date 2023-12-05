@@ -1,3 +1,3 @@
-# Projet1WCS
+# Le musée virtuel de l'Intelligence Artificielle.
 
-hola chicos
+# The virtual AI Museum.
