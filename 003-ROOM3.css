@@ -150,8 +150,9 @@ body {
 }
 
 .popup-image .textcards-popup {
+  box-shadow: 0px 4px 0px 8px rgba(0, 0, 0, 0.7);
   display: flex;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #1f1f1f;
   height: 9.5em;
   width: 15em;
