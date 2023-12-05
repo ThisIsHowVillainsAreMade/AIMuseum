@@ -132,7 +132,6 @@ nav {
 .blur-background {
   z-index: 1;
   position: absolute;
-  visibility: hidden;
   opacity: 0;
   width: 100vw;
   height: 100vh;
@@ -142,6 +141,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
 }
 
 .blur-background-active {
