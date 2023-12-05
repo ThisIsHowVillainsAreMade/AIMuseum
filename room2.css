@@ -31,11 +31,11 @@ body{
 .text{
   color: var(--clr-grey-200);
 }
-h2 {
+.title {
   opacity: 0;
   z-index: -1;
 }
-p {
+.descrip {
   opacity: 0;
 }
 
@@ -44,94 +44,74 @@ p {
   position: relative;
 }
 
-.images img {
+.images .pic {
   width: 100%;
   height: 100%;
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.images img:hover {
+.images .pic:hover {
   transform: scale(1.1);
   filter: blur(0.2rem);
 }
-.images:hover h2{
+.images:hover .title{
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 
  #image1{
-  height:250px; 
-  width:400px;
-
+  height:15.6 rem; 
+  width:25rem;
   transform: translate(10%,50%);
 }
  #image2{
-  height:300px; 
-  width:270px;
- 
-
+  height:18.75rem; 
+  width:16.8rem;
   transform: translate(720%,70%);
  } 
  #image3{
-  height:350px; 
-  width:270px;
-  
-
+  height:21.8rem; 
+  width:16.8rem;
   transform: translate(400%,200%);
-  
 }
 #image4{
-  height:400px; 
-  width:350px;
- 
-
+  height:25rem; 
+  width:21.8rem;
   transform: translate(150%,400%);
-
 }
 #image5{
-  height:270px; 
-  width:300px;
- 
-
+  height:16.8rem; 
+  width:18.75rem;
   transform: translate(400%,400%);
 }
 
 #image6{
-  height:300px; 
-  width:300px;
-
-  
+  height:18.75rem; 
+  width:18.75rem;
   transform: translate(200%,550%);
 }
 
 #image7{
-  height:320px; 
-  width:250px;
- 
-
+  height:20rem; 
+  width:15.6rem;
   transform: translate(-650%,400%);
 }
 
 #image8{
-  height:400px; 
-  width:400px;
-
-
+  height:25rem; 
+  width:25rem;
   transform: translate(-370%,200%);
 }
 
 #image9{
-  height:300px; 
-  width:300px;
-
-
+  height:18.75rem; 
+  width:18.75rem;
   transform: translate(-750%,550%);
 }
 #image10{
-  height:360px; 
-  width:300px;
-
+  height:18.75rem; 
+  width:18.75rem;
   transform: translate(-390%,10%);
 } 
 
