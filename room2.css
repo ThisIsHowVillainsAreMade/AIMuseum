@@ -18,10 +18,14 @@
   }
   
 body{
+  position: relative;
     background-color: var(--clr-black);
-    height: 150rem;
+    height: 150em;
     width: 150rem;
     overflow: hidden;
+}
+.images .text {
+  position: relative;
 }
 
 .container {
@@ -30,13 +34,26 @@ body{
 
 .text{
   color: var(--clr-grey-200);
+  grid-area: 1 / 4 / 2 / 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .title {
   opacity: 0;
-  z-index: -1;
+  color: var(--clr-grey-200);
+
 }
 .descrip {
   opacity: 0;
+  color: var(--clr-grey-200);
+  font-size: 1.5rem;
+
+}
+.title-zoom{
+  font-size: 3rem;
+  color: var(--clr-grey-100);
+  /*font family nantes je sais pas quoi bizarre */
 }
 
 .allImages {
@@ -61,8 +78,8 @@ body{
 
 
  #image1{
-  height:15.6 rem; 
-  width:25rem;
+  height:15.6em; 
+  width:25em;
   transform: translate(10%,50%);
 }
  #image2{
@@ -88,8 +105,8 @@ body{
 
 #image6{
   height:18.75rem; 
-  width:18.75rem;
-  transform: translate(200%,550%);
+  width:20.75rem;
+  transform: translate(300%,550%);
 }
 
 #image7{
@@ -114,4 +131,71 @@ body{
   width:18.75rem;
   transform: translate(-390%,10%);
 } 
+
+
+
+.zoom-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index:2;
+}
+
+.zoom-content {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  width: 50%;
+  height: 90%;
+ 
+  
+}
+.zoom-content img{
+  grid-area: 1 / 1 / 2 / 4;
+  padding-bottom: 30vh;
+  width: 100%;
+  height: 90%;
+}
+
+
+
+
+.flip-animation {
+  transition: transform 0.5s ease-in-out;
+  transform: rotateY(0deg);
+}
+
+.flip-animation.flip {
+  transform: rotateY(360deg);
+}
+
+
+.blur-background {
+ position: fixed;
+  top: 0;
+  left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 5%, 0.6);
+    backdrop-filter: blur(12px); 
+    z-index: 1; 
+    display: none; 
+}
+.close-img{
+  background-color: #4d4d4d;
+  color:white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  width: fit-content;
+  margin-top: 2rem;
+
+}
 
