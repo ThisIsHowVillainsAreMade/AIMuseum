@@ -124,7 +124,7 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.overlay {
+.rOne-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -140,7 +140,7 @@
   display: block;
 }
 
-.modal {
+.rOne-modal {
   position: fixed;
   top: 10%;
   left: 10%;
@@ -152,12 +152,12 @@
 }
 
 @media screen and (max-width: 992px) {
-  .modal {
+  .rOne-modal {
     flex-direction: column;
   }
 }
 
-.modal-background {
+.rOne-modal-background {
   background-image: url("./images/r1_img_1.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -165,7 +165,7 @@
   flex-basis: 75%;
 }
 
-.modal-body {
+.rOne-modal-body {
   height: 60%;
   flex-basis: 25%;
   padding: 1.5rem;
@@ -176,20 +176,20 @@
   justify-content: space-around;
 }
 
-.modal-title {
+.rOne-modal-title {
   font-family: "SF-Pro-Display";
   font-size: 1.5rem;
   color: var(--clr-white);
 }
 
-.modal-content {
+.rOne-modal-content {
   font-family: "SF-Pro-Display";
   font-size: 1rem;
   padding: 1.5rem 0;
   color: var(--clr-white);
 }
 
-.modal-closebutton {
+.rOne-modal-closebutton {
   font-family: "SF-Pro-Display";
   font-size: 1rem;
   padding: 1rem;
