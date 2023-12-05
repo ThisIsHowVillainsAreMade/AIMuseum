@@ -1,0 +1,163 @@
+:root {
+  --clr-white: hsla(0, 0%, 97%, 1);
+  --clr-grey-100: hsla(0, 0%, 90%, 1);
+  --clr-grey-200: hsla(0, 0%, 70%, 1);
+  --clr-grey-300: hsla(0, 0%, 50%, 1);
+  --clr-grey-400: hsla(0, 0%, 30%, 1);
+  --clr-grey-500: hsla(0, 0%, 12%, 1);
+  --clr-black: hsla(0, 0%, 5%, 1);
+  --fs-200: 1.5rem;
+  --fs-300: 2rem;
+  --fs-400: 2.5rem;
+  --fs-600: 4rem;
+}
+
+body {
+  font-family: "SF-Pro-Display";
+  height: 4150px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--clr-black);
+  overscroll-behavior: none;
+}
+
+.biggercontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.bigcontainer {
+  position: absolute;
+  top: 0;
+  width: 4800px;
+  height: 100%;
+}
+
+.gallery {
+  position: absolute;
+  top: 15%;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  margin: 1em;
+  display: flex;
+  position: relative;
+  width: 415px;
+  overflow: hidden;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.imagescards {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.imagescards:hover {
+  filter: blur(0.3rem);
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+.card:hover .titlecards {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.titlecards {
+  margin: 0.3em;
+  font-size: var(--fs-300);
+  color: var(--clr-white);
+  z-index: 2;
+  opacity: 0;
+}
+
+.textcards {
+  margin: 0.3em;
+  font-size: var(--fs-200);
+  color: var(--clr-white);
+  z-index: 2;
+  opacity: 0;
+}
+
+.textcards.titlecards {
+  z-index: 1;
+  background-color: var(--clr-grey-200);
+}
+
+.card:hover .textcards {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  body {
+    height: 3050px;
+  }
+
+  .biggercontainer {
+    height: 100svh;
+  }
+  .card {
+    margin: 1em;
+    width: 320px;
+  }
+  .gallery {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  body {
+    height: 5125px;
+  }
+  .gallery {
+    justify-content: flex-start;
+  }
+  .card {
+    margin: 7em;
+    width: 369px;
+  }
+  .textcards {
+    top: 8em;
+  }
+}
+
+.card.one {
+  height: 70%;
+}
+
+.card.two {
+  height: 70%;
+}
+
+.card.three {
+  height: 70%;
+}
+
+.card.four {
+  height: 93%;
+}
+
+.card.five {
+  height: 47%;
+}
+
+.card.six {
+  height: 85%;
+}
+
+.card.seven {
+  height: 70%;
+}
