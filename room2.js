@@ -1,5 +1,5 @@
 function move(e) {
-      window.scrollTo(1.5*e.clientX - window.innerWidth / 1.05, 2.5*e.clientY - window.innerHeight / 1.05);
+      window.scrollTo(1.01*e.clientX - window.innerWidth /2, 3*e.clientY - window.innerHeight /2);
       
 }
 /*const container = document.getElementById('container');
@@ -27,7 +27,7 @@ function openZoom(imageSrc, title, description) {
   let zoomDescrip = document.querySelector(".descrip");
   let zoomContainer = document.getElementById("zoomContainer");
   let blurBackground = document.getElementById("blurBackground");
-  let mvBody = document.querySelector('body');
+  let mvBody = document.querySelector('main');
   
   mvBody.style.position ="fixed"
 
@@ -65,7 +65,7 @@ function closeZoom() {
   let zoomContainer = document.getElementById("zoomContainer");
   let zoomTitle = document.querySelector(".title");
   let zoomDescrip = document.querySelector(".descrip");
-  let mvBody = document.querySelector('body');
+  let mvBody = document.querySelector('main');
 
 
   mvBody.style.position ="relative";

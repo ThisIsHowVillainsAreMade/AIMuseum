@@ -16,13 +16,17 @@
   --fs-400: 2.5rem;
   --fs-600: 4rem;
   }
-  
 body{
+  overflow: hidden;
+  min-height: 100vh;
+  
+}  
+main{
   position: relative;
-    background-color: var(--clr-black);
-    height: 150em;
-    width: 150rem;
-    overflow: hidden;
+  background-color: var(--clr-black);
+  height: 200%;
+  width: 130%;
+  overflow: hidden;
 }
 .images .text {
   position: relative;
@@ -53,7 +57,6 @@ body{
 .title-zoom{
   font-size: 3rem;
   color: var(--clr-grey-100);
-  /*font family nantes je sais pas quoi bizarre */
 }
 
 .allImages {
@@ -78,8 +81,8 @@ body{
 
 
  #image1{
-  height:15.6em; 
-  width:25em;
+  height:100%; 
+  width:40rem;
   transform: translate(10%,50%);
 }
  #image2{
@@ -88,9 +91,9 @@ body{
   transform: translate(720%,70%);
  } 
  #image3{
-  height:21.8rem; 
+  height:100%; 
   width:16.8rem;
-  transform: translate(400%,200%);
+  transform: translate(700%,200%);
 }
 #image4{
   height:25rem; 
@@ -99,32 +102,32 @@ body{
 }
 #image5{
   height:16.8rem; 
-  width:18.75rem;
-  transform: translate(400%,400%);
+  width:16.75rem;
+  transform: translate(200%,250%);
 }
 
 #image6{
-  height:18.75rem; 
-  width:20.75rem;
-  transform: translate(300%,550%);
+  height:20.75rem; 
+  width:22.75rem;
+  transform: translate(-400%,550%);
 }
 
 #image7{
-  height:20rem; 
-  width:15.6rem;
-  transform: translate(-650%,400%);
+  height:100%; 
+  width:20.6rem;
+  transform: translate(-400%,250%);
 }
 
 #image8{
   height:25rem; 
   width:25rem;
-  transform: translate(-370%,200%);
+  transform: translate(-280%,100%);
 }
 
 #image9{
   height:18.75rem; 
   width:18.75rem;
-  transform: translate(-750%,550%);
+  transform: translate(-150%,550%);
 }
 #image10{
   height:18.75rem; 
@@ -152,17 +155,18 @@ body{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  width: 50%;
-  height: 90%;
- 
-  
-}
-.zoom-content img{
-  grid-area: 1 / 1 / 2 / 4;
-  padding-bottom: 30vh;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+
+  /*margin: 10rem; 
+  display: flex;
   width: 100%;
-  height: 90%;
+  height: 95%;
+  justify-items: center;
+  justify-content: space-evenly;*/
 }
+
 
 
 
@@ -199,3 +203,48 @@ body{
 
 }
 
+.image-full {
+  grid-area: 1 / 1 / 2 / 4;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-full .pic{
+  background-size: cover;
+  margin: auto;
+
+}
+.carretest{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--clr-black);
+  display: none;
+  z-index: 1;
+  overflow: hidden;
+}
+.disclaimer{
+  color : white;
+  font-size: 2rem;
+  z-index: 200;
+  padding: 2rem;
+
+  
+}
+
+
+@media screen and (max-width: 1200px){
+
+  .carretest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  main{
+    display: none;
+  }
+  
+
+  }
