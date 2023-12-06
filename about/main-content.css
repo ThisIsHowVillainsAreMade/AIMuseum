@@ -72,3 +72,15 @@
   transform: translate(-50%, -50%);
   color: white;
 }
+
+a {
+  color: #f7146b;
+}
+
+a:hover {
+  color: #0f9269;
+}
+
+a:active {
+  color: #730071;
+}
