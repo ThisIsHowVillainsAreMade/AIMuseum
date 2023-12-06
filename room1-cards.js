@@ -8,326 +8,326 @@ const columnArray = [
   {
     // card1
     colonne: 1,
-    h2: "Lorem ipsum dolor sit am1",
+    h2: "Alan Turing, le pionnier",
     image: "./images/r1_img_1.png",
     height: "14rem",
     content:
-      "1.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Alan Turing, pionnier en informatique, jetta les bases théoriques de l'IA avec son concept de machine universelle. Son travail influença le développement des algorithmes et des modèles utilisés dans la création d'intelligences artificielles.",
   },
   {
     // card2
     colonne: 1,
-    h2: "Lorem Ipsum2",
+    h2: "Naissance du terme IA",
     image: "./images/r1_img_2.png",
     height: "19rem",
     content:
-      "2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Le terme Intelligence Artificielle a été introduit par John McCarthy lors d'une conférence en 1956, jetant les bases du domaine. ",
   },
   {
     // card3
     colonne: 1,
-    h2: "Lorem Ipsum3",
+    h2: "Perceptron, père de l'IA",
     image: "./images/r1_img_3.png",
     height: "31rem",
     content:
-      "3.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Le perceptron, inventé par Frank Rosenblatt en 1957, est considéré comme le précurseur de l'IA. C'est le premier modèle de neurone artificiel, inspirant les réseaux de neurones modernes et stimulant le développement ultérieur de l'IA.",
   },
   {
     // card4
     colonne: 1,
-    h2: "Lorem Ipsum4",
+    h2: "L'hiver de l'IA",
     image: "./images/r1_img_4.png",
     height: "23rem",
     content:
-      "4.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA a connu un déclin dans les années 1970-1980, appelé l'hiver de l'IA, en raison de défis techniques.",
   },
   {
     // card5
     colonne: 1,
-    h2: "Lorem Ipsum5",
+    h2: "L'ère des systèmes experts",
     image: "./images/r1_img_5.png",
     height: "18rem",
     content:
-      "5.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les systèmes experts ont dominé les applications de l'IA dans les années 80, utilisant des règles logiques pour résoudre des problèmes spécifiques.",
   },
   {
     // card6
     colonne: 1,
-    h2: "Lorem Ipsum6",
+    h2: "Deep Blue et Kasparov",
     image: "./images/r1_img_6.png",
     height: "29rem",
     content:
-      "6.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "En 1997, Deep Blue battait le champion du monde d'échecs Garry Kasparov, démontrant la puissance de l'IA dans des tâches complexes.",
   },
   {
     // card7
     colonne: 1,
-    h2: "Lorem Ipsum7",
+    h2: "Renaissance du réseau de neurones",
     image: "./images/r1_img_7.png",
     height: "22rem",
     content:
-      "7.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Dans les années 2000, la résurgence des réseaux de neurones a inauguré l'ère de l'apprentissage profond, propulsant des avancées notables grâce à des algorithmes améliorés, une puissance de calcul accrue et une abondance de données.",
   },
   {
     // card8
     colonne: 1,
-    h2: "Lorem Ipsum8",
+    h2: "Boom du Big Data",
     image: "./images/r1_img_8.png",
     height: "16rem",
     content:
-      "8.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'explosion des données dans les années 2010 a alimenté les capacités des algorithmes d'apprentissage machine, propulsant l'IA moderne.",
   },
   {
     // card9
     colonne: 1,
-    h2: "Lorem Ipsum9",
+    h2: "Biais Algorithmiques",
     image: "./images/r1_img_9.png",
     height: "23rem",
     content:
-      "9.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les algorithmes d'IA peuvent refléter des préjugés, soulignant le besoin critique de garantir l'équité et la transparence.",
   },
   {
     // card10
     colonne: 2,
-    h2: "Lorem Ipsum10",
+    h2: "Auto-encodeurs",
     image: "./images/r1_img_10.png",
     height: "19rem",
     content:
-      "10.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Nés dans les années 2000, les auto-encodeurs marquent l'union entre l'IA et la robotique. Sculpteurs numériques, ils compressent les données tout en insufflant une créativité nouvelle, redéfinissant ainsi la robotique avec des avancées notables dans la vision par ordinateur et la reconnaissance de formes.",
   },
   {
     // card11
     colonne: 2,
-    h2: "Lorem Ipsum11",
+    h2: "Révolution des GANs",
     image: "./images/r1_img_11.png",
     height: "17rem",
     content:
-      "11.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les Réseaux Génératifs Antagonistes (GANs), qui ont émergé en 2014, révolutionnent l'IA en permettant la génération d'images d'une réalisme exceptionnel. Cette approche antagoniste, avec un générateur et un discriminateur en opposition, propulse la création d'images authentiques, ouvrant de vastes possibilités créatives à l'IA, de l'art à la modélisation pratique.",
   },
   {
     // card12
     colonne: 2,
-    h2: "Lorem Ipsum12",
+    h2: "Arrivée des Chatbots",
     image: "./images/r1_img_12.png",
     height: "19rem",
     content:
-      "12.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les chatbots se sont répandus, offrant des conversations virtuelles courantes avec les utilisateurs. Leur montée en puissance témoigne d'une évolution dans la manière dont l'IA façonne les interactions quotidiennes en ligne.",
   },
   {
     // card13
     colonne: 2,
-    h2: "Lorem Ipsum13",
+    h2: "L'IA dans la culture populaire ",
     image: "./images/r1_img_13.png",
     height: "28rem",
     content:
-      "13.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'impact de l'IA dans la culture populaire est palpable, des androïdes de Star Trek à la familiarité quotidienne avec des assistants vocaux comme Siri. Ces représentations reflètent l'évolution de notre fascination pour l'IA, de la fiction à la réalité, marquant son intégration croissante dans nos vies.",
   },
   {
     // card14
     colonne: 2,
-    h2: "Lorem Ipsum14",
+    h2: "Défi de Go",
     image: "./images/r1_img_14.png",
     height: "19rem",
     content:
-      "14.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "En 2016, AlphaGo, développé par DeepMind, a battu le champion du monde de Go.",
   },
   {
     // card15
     colonne: 2,
-    h2: "Lorem Ipsum15",
+    h2: "L'IA dans le secteur de la santé",
     image: "./images/r1_img_15.png",
     height: "30rem",
     content:
-      "15.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA révolutionne la médecine en permettant des diagnostics précoces, comme la détection précoce des signes de cancers. Elle facilite également des traitements plus personnalisés en analysant les données génétiques et médicales, améliorant ainsi l'efficacité des interventions thérapeutiques.",
   },
   {
     // card16
     colonne: 2,
-    h2: "Lorem Ipsum16",
+    h2: "L'IA sur les routes",
     image: "./images/r1_img_16.png",
     height: "16rem",
     content:
-      "16.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les véhicules autonomes représentent une révolution majeure dans le transport grâce à l'intelligence artificielle. Ces technologies utilisent des algorithmes sophistiqués pour la perception, la prise de décision et la navigation.",
   },
   {
     // card17
     colonne: 2,
-    h2: "Lorem Ipsum17",
-    image: "./images/r1_img_1.png",
+    h2: "La symbiose IA-Robot",
+    image: "./images/r1_img_17.png",
     height: "19rem",
     content:
-      "17.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'intégration de l'intelligence artificielle dans la robotique a déclenché une révolution. Des robots équipés d'algorithmes d'apprentissage perfectionnent leurs capacités, de la navigation précise à la prise de décision complexe, ouvrant la voie à des applications révolutionnaires.",
   },
   {
     // card18
     colonne: 2,
-    h2: "Lorem Ipsum18",
-    image: "./images/r1_img_2.png",
+    h2: "Création Artistique",
+    image: "./images/r1_img_18.png",
     height: "28rem",
     content:
-      "18.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Des artistes collaborent avec des algorithmes d'IA, fusionnant créativité humaine et algorithmique.",
   },
   {
     // card19
     colonne: 3,
-    h2: "Lorem Ipsum19",
-    image: "./images/r1_img_3.png",
+    h2: "L'IA dans l'éducation",
+    image: "./images/r1_img_19.png",
     height: "25rem",
     content:
-      "19.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA personnalise l'apprentissage, adaptant les cours aux besoins individuels des étudiants. Toutefois, des défis subsistent, notamment la dépendance technologique, la protection des données et les risques de biais, exigeant une mise en œuvre réfléchie.",
   },
   {
     // card20
     colonne: 3,
-    h2: "Lorem Ipsum20",
-    image: "./images/r1_img_4.png",
+    h2: "IA et cybersécurité",
+    image: "./images/r1_img_20.png",
     height: "21rem",
     content:
-      "20.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA renforce la cybersécurité en anticipant et contrant les menaces, mais confrontée à des défis comme la sophistication des attaques. Trouver l'équilibre entre innovation et protection des données demeure crucial.",
   },
   {
     // card21
     colonne: 3,
-    h2: "Lorem Ipsum21",
-    image: "./images/r1_img_5.png",
+    h2: "L'IA dans le sport",
+    image: "./images/r1_img_21.png",
     height: "19rem",
     content:
-      "21.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA révolutionne le sport avec des analyses avancées, des prévisions de performance et des entraînements personnalisés basés sur des données en temps réel. Cependant, des questions éthiques émergent autour de la confidentialité des données et de l'équité dans la compétition.",
   },
   {
     // card22
     colonne: 3,
-    h2: "Lorem Ipsum22",
-    image: "./images/r1_img_6.png",
+    h2: "Chatbots médicaux",
+    image: "./images/r1_img_22.png",
     height: "21rem",
     content:
-      "22.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les chatbots médicaux, basés sur l'IA, offrent des conseils de santé personnalisés, améliorant l'accessibilité aux informations médicales. Malgré leur utilité, des préoccupations subsistent quant à la précision et à la confidentialité, soulignant la nécessité d'une intégration prudente dans les soins de santé.",
   },
   {
     // card23
     colonne: 3,
-    h2: "Lorem Ipsum23",
-    image: "./images/r1_img_7.png",
+    h2: "Symphonie algorithmique",
+    image: "./images/r1_img_23.png",
     height: "25rem",
     content:
-      "23.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Des algorithmes d'IA créent des compositions musicales, explorant de nouvelles frontières créatives.",
   },
   {
     // card24
     colonne: 3,
-    h2: "Lorem Ipsum24",
-    image: "./images/r1_img_8.png",
+    h2: "Révélations du passé",
+    image: "./images/r1_img_24.png",
     height: "17rem",
     content:
-      "24.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA transforme l'archéologie en accélérant l'analyse des données pour la cartographie, la détection de sites et la reconstruction 3D. Son adoption nécessite une collaboration étroite entre archéologues et experts en IA pour garantir une interprétation précise.",
   },
   {
     // card25
     colonne: 3,
-    h2: "Lorem Ipsum25",
-    image: "./images/r1_img_9.png",
+    h2: "IA et droit",
+    image: "./images/r1_img_25.png",
     height: "24rem",
     content:
-      "25.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA transforme le domaine juridique en automatisant des tâches, améliorant la recherche et facilitant la gestion des contrats. Toutefois, des défis émergent, notamment en matière de responsabilité et de transparence des décisions automatisées, soulevant des questions éthiques et réglementaires.",
   },
   {
     // card26
     colonne: 3,
-    h2: "Lorem Ipsum26",
-    image: "./images/r1_img_10.png",
+    h2: "Cultiver avec précision",
+    image: "./images/r1_img_26.png",
     height: "24rem",
     content:
-      "26.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA révolutionne l'agriculture avec des technologies comme les drones et les capteurs, optimisant la gestion des cultures. Malgré ses avantages, des préoccupations subsistent sur l'accessibilité et la confidentialité des données.",
   },
   {
     // card27
     colonne: 3,
-    h2: "Lorem Ipsum27",
-    image: "./images/r1_img_11.png",
+    h2: "IA et exploration spatiale",
+    image: "./images/r1_img_27.png",
     height: "19rem",
     content:
-      "27.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA joue un rôle crucial dans l'exploration spatiale en équipant les missions spatiales de capacités avancées. Des systèmes d'IA alimentent la navigation autonome, l'analyse des données astronomiques et facilitent la prise de décision en temps réel.",
   },
   {
     // card28
     colonne: 4,
-    h2: "Lorem Ipsum28",
-    image: "./images/r1_img_12.png",
+    h2: "IA et jeux vidéo",
+    image: "./images/r1_img_28.png",
     height: "19rem",
     content:
-      "28.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA améliore les jeux vidéo avec des adversaires virtuels plus intelligents et réactifs.",
   },
   {
     // card29
     colonne: 4,
-    h2: "Lorem Ipsum29",
-    image: "./images/r1_img_13.png",
+    h2: "IA et realité virtuelle",
+    image: "./images/r1_img_29.png",
     height: "32rem",
     content:
-      "29.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA enrichit les expériences de réalité virtuelle, créant des mondes plus réactifs et complexes.",
   },
   {
     // card30
     colonne: 4,
-    h2: "Lorem Ipsum30",
-    image: "./images/r1_img_14.png",
+    h2: "Portrait de rêve",
+    image: "./images/r1_img_30.png",
     height: "25rem",
     content:
-      "30.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Des IA génératives ont été utilisées pour générer des portraits d'individus qui n'existent pas, créant des visages uniques et parfois surréalistes.",
   },
   {
     // card31
     colonne: 4,
-    h2: "Lorem Ipsum31",
-    image: "./images/r1_img_15.png",
+    h2: "Cuisine créative",
+    image: "./images/r1_img_31.png",
     height: "18rem",
     content:
-      "31.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Des IA génératives ont été programmées pour inventer des recettes étranges et inhabituelles, allant de la pizza aux fraises aux tacos au chocolat.",
   },
   {
     // card32
     colonne: 4,
-    h2: "Lorem Ipsum32",
-    image: "./images/r1_img_16.png",
+    h2: "Chant d'oiseau techno",
+    image: "./images/r1_img_32.png",
     height: "19rem",
     content:
-      "32.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Une expérience a utilisé une IA pour transformer les chants d'oiseaux en musique techno, créant une expérience sonore unique.",
   },
   {
     // card33
     colonne: 4,
-    h2: "Lorem Ipsum33",
-    image: "./images/r1_img_1.png",
+    h2: "Reconnaissance faciale",
+    image: "./images/r1_img_33.png",
     height: "18rem",
     content:
-      "33.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les systèmes de reconnaissance faciale basés sur l'IA sont utilisés dans la sécurité et les smartphones.",
   },
   {
     // card34
     colonne: 4,
-    h2: "Lorem Ipsum34",
-    image: "./images/r1_img_2.png",
+    h2: "L'IA et les médias sociaux",
+    image: "./images/r1_img_34.png",
     height: "28rem",
     content:
-      "34.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Les algorithmes d'IA alimentent les recommandations et le filtrage sur les médias sociaux.",
   },
   {
     // card35
     colonne: 4,
-    h2: "Lorem Ipsum35",
-    image: "./images/r1_img_3.png",
+    h2: "L'IA et l'environnement",
+    image: "./images/r1_img_35.png",
     height: "20rem",
     content:
-      "35.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA joue un rôle clé dans la surveillance des changements environnementaux grâce à des applications avancées, telles que l'analyse des données satellitaires et la modélisation climatique. Cependant, son déploiement massif nécessite une évaluation constante de son impact écologique. ",
   },
   {
     // card36
     colonne: 4,
-    h2: "Lorem Ipsum36",
-    image: "./images/r1_img_4.png",
+    h2: "Traduction automatique",
+    image: "./images/r1_img_36.png",
     height: "16rem",
     content:
-      "36.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "L'IA transforme la traduction multilingue en proposant des solutions rapides et précises. Des systèmes basés sur des réseaux de neurones améliorent la fluidité des traductions, facilitant ainsi la communication mondiale.",
   },
 ];
 
@@ -377,11 +377,6 @@ const modalCloseButton = document.querySelector(".rOne-modal-closebutton");
 const overlay = document.querySelector(".rOne-overlay");
 const body = document.querySelector(".rOne");
 
-// cards.onclick = function () {
-//   modal.classList.add("modal-open");
-//   modalBody.classList.add("modal-open");
-// };
-
 cards.forEach(function (card) {
   card.addEventListener("click", function (event) {
     modal.classList.add("modal-open");
@@ -390,11 +385,9 @@ cards.forEach(function (card) {
     body.classList.add("no-scroll");
     console.log(event);
     console.log(event.srcElement.parentNode);
-    // const url = event.srcElement.parentNode.style.backgroundImage;
-    // modalBackground.style.backgroundImage = url;
     const title = event.srcElement.innerHTML;
     modalTitle.innerHTML = title;
-    // chercher l'élément dans le tableau qui contient le titre
+    // look for the element containing the title in the array, to identify corresponding image and content.
     const selectedObject = columnArray.find(
       (arrayElement) => arrayElement.h2 === title
     );
