@@ -143,56 +143,52 @@
 .rOne-modal {
   position: fixed;
   top: 10%;
-  left: 10%;
-  width: 80vw;
+  left: 15%;
+  width: 70vw;
   height: 80vh;
   display: none;
   gap: 1rem;
   z-index: 4;
 }
 
-@media screen and (max-width: 992px) {
-  .rOne-modal {
-    flex-direction: column;
-  }
-}
-
 .rOne-modal-background {
   background-image: url("./images/r1_img_1.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: top center;
   border-radius: 6px;
-  flex-basis: 75%;
+  flex-basis: 70%;
 }
 
 .rOne-modal-body {
-  height: 60%;
-  flex-basis: 25%;
+  /* height: 60%; */
+  flex-basis: 30%;
   padding: 1.5rem;
   border-radius: 6px;
-  background-color: var(--clr-grey-500);
+  /* background-color: var(--clr-grey-500); */
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  /* align-items: center; */
 }
 
 .rOne-modal-title {
   font-family: "SF-Pro-Display";
   font-size: 1.5rem;
+  padding-bottom: 1rem;
   color: var(--clr-white);
 }
 
 .rOne-modal-content {
   font-family: "SF-Pro-Display";
-  font-size: 1rem;
-  padding: 1.5rem 0;
+  font-size: clamp(1rem);
+  padding-bottom: 2rem;
   color: var(--clr-white);
 }
 
 .rOne-modal-closebutton {
   font-family: "SF-Pro-Display";
   font-size: 1rem;
-  padding: 1rem;
+  padding: 0.75rem;
   width: 6rem;
   border-radius: 8px;
   border: none;
@@ -200,6 +196,19 @@
   background-color: var(--clr-grey-400);
 }
 
+.rOne-modal-closebutton:hover {
+  background-color: var(--clr-grey-300);
+}
+
 .modal-open {
   display: flex;
+}
+@media screen and (max-width: 992px) {
+  .rOne-modal {
+    flex-direction: column;
+  }
+
+  .rOne-modal-background {
+    background-position: bottom center;
+  }
 }

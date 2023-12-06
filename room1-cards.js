@@ -8,7 +8,7 @@ const columnArray = [
   {
     // card1
     colonne: 1,
-    h2: "Lorem Ipsum1",
+    h2: "Lorem ipsum dolor sit am1",
     image: "./images/r1_img_1.png",
     height: "14rem",
     content:
