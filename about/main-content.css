@@ -60,6 +60,7 @@
   display: block;
   filter: brightness(0.7);
 }
+
 .sectionBanner h2 {
   z-index: 21;
   position: absolute;
@@ -67,8 +68,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
-
-.carouselSection {
-  margin-bottom: 4rem;
 }

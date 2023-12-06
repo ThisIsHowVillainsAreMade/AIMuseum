@@ -31,6 +31,7 @@
   color: white;
   text-align: center;
   transition: transform 1s, opacity 1s;
+  transform-style: preserve-3d;
 }
 
 div.carousel__cell {
@@ -115,7 +116,7 @@ div.carousel__cell:hover {
   position: relative;
   z-index: 2;
   background: transparent;
-  margin: -15% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
 }
 
 .labelp {
@@ -163,4 +164,9 @@ div.carousel__cell:hover {
   color: var(--clr-black);
   background-color: var(--clr-white);
   border: 1px solid var(--clr-white);
+}
+
+.carouselSection {
+  margin: 0px 10% 0 10%;
+  padding-bottom: 10%;
 }
