@@ -15,17 +15,21 @@ const modalAbout = document.getElementById("about-page");
 // faceToFaceAiPicture
 // tomorrowPicture
 
-// function parallaxPictures() {
-//   const modalScroll = -modalAbout.scrollTop;
+// const backgroundPictures = document.querySelectorAll(".backgroundPictures");
+
+// const parallaxPictures = () => {
+//   const modalScroll = modalAbout.scrollTop;
 //   const contentPictures = document.querySelectorAll(".backgroundPictures");
-//   ContentPictures.forEach(function (image) {
+//   contentPictures.forEach(function (image) {
 //     const speed = image.getAttribute("data-speed");
-//     const yPos = scrollTop * speed;
+//     const yPos = modalScroll * speed;
 //     image.style.transform = "translateY(" + yPos + "px)";
 //   });
-// }
+// };
 
-// MODAL SCROLL
+// modalAbout.addEventListener("scroll", parallaxPictures);
+
+// PARALLAX SCROLL
 
 modalAbout.addEventListener("scroll", () => {
   const { scrollTop } = modalAbout;
@@ -35,4 +39,5 @@ modalAbout.addEventListener("scroll", () => {
   sky.style.top = -1.2 * scrollTop + "px";
   aivolution.style.top = 500 + -1 * scrollTop + "px";
   // parallaxPictures();
+  // backgroundPictures.style.top = 500 + 7 * scrollTop + "px";
 });

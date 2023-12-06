@@ -51,14 +51,17 @@
   display: flex;
   width: 100%;
   height: 16rem;
+  overflow: hidden;
 }
 
 .sectionBanner img {
   z-index: 20;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   display: block;
   filter: brightness(0.7);
+  position: relative;
 }
 
 .sectionBanner h2 {
