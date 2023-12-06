@@ -42,6 +42,8 @@ animate();
 
 document.querySelectorAll(".imagescards").forEach((image) => {
   image.onclick = () => {
+    document.querySelector(".bigcontainer").classList.add("background-blur");
+    document.body.classList.add("no-scroll");
     document.querySelector(".popup-image").style.display = "flex";
     document.querySelector(".popup-image .popup-pic").src =
       image.getAttribute("src");
@@ -60,8 +62,10 @@ document.querySelectorAll(".imagescards").forEach((image) => {
 });
 
 document.querySelector(".popup-image .popup-button").onclick = () => {
+  document.querySelector(".bigcontainer").classList.remove("background-blur");
+  document.body.classList.remove("no-scroll");
   document.querySelector(".popup-image").classList.remove("visible");
   setTimeout(() => {
     document.querySelector(".popup-image").style.display = "none";
-  });
+  }, 0);
 };

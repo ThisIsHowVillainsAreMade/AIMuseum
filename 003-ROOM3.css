@@ -22,6 +22,10 @@ body {
   overscroll-behavior: none;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .biggercontainer {
   position: fixed;
   top: 0;
@@ -188,15 +192,13 @@ body {
 }
 
 .popup-image .popup-title {
-  height: 3em;
-  width: 15em;
+  margin-bottom: 1em;
   font-size: var(--fs-200);
   color: var(--clr-white);
   z-index: 102;
 }
 
 .popup-image .textcards-popup {
-  font-size: var(--fs-200);
   color: var(--clr-white);
   z-index: 100;
 }
@@ -248,7 +250,7 @@ body {
 }
 
 .card.six {
-  height: 95%;
+  height: 70%;
 }
 
 .card.seven {
@@ -257,4 +259,8 @@ body {
 
 .textcards-one {
   margin: 0;
+}
+
+.background-blur .card {
+  filter: blur(12px);
 }
