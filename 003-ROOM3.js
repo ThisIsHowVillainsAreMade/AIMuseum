@@ -42,7 +42,7 @@ animate();
 
 document.querySelectorAll(".imagescards").forEach((image) => {
   image.onclick = () => {
-    document.querySelector(".popup-image").style.display = "block";
+    document.querySelector(".popup-image").style.display = "flex";
     document.querySelector(".popup-image .popup-pic").src =
       image.getAttribute("src");
     const textCardContent =
@@ -63,5 +63,5 @@ document.querySelector(".popup-image .popup-button").onclick = () => {
   document.querySelector(".popup-image").classList.remove("visible");
   setTimeout(() => {
     document.querySelector(".popup-image").style.display = "none";
-  }, 200);
+  });
 };
