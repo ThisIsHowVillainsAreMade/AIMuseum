@@ -75,7 +75,7 @@ function move(e) {
     targetY = 3 * e.clientY - window.innerHeight / 2;
 
     const currentTime = Date.now();
-    if (!isMoving && currentTime - lastMoveTime > 300) {
+    if (!isMoving && currentTime - lastMoveTime > 200) {
       isMoving = true;
       movePageSmoothly(currentTime);
     }
@@ -95,6 +95,5 @@ function movePageSmoothly(startTime) {
     requestAnimationFrame(() => movePageSmoothly(startTime));
   } else {
     isMoving = false;
-    console.log('Mouvement de la souris détecté après un délai de 300 ms');
   }
 }
