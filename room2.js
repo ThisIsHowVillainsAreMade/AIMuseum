@@ -1,35 +1,15 @@
-function move(e) {
-      window.scrollTo(1.01*e.clientX - window.innerWidth /2, 3*e.clientY - window.innerHeight /2);
-      
-}
-/*const container = document.getElementById('container');
-let delay = 100;
-let mouseX = 0;
-let mouseY = 0;
 
-function move(e) {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  setTimeout(updateTransform, delay);
-}
-
-function updateTransform() {
-  const deltaX = (1.5 * mouseX - window.innerWidth / 1.01);
-  const deltaY = (1.7 * mouseY - window.innerHeight / 1.01);
-  container.style.transition = 'transform 0.3s ease-out'; // Ajustez la durée et le timing function selon vos besoins
-  container.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-}*/
-
+let moveinable = false;
 
 function openZoom(imageSrc, title, description) {
   let zoomImage = document.getElementById("zoomImage");
   let zoomTitle = document.querySelector(".title-zoom");
   let zoomDescrip = document.querySelector(".descrip");
   let zoomContainer = document.getElementById("zoomContainer");
-  let blurBackground = document.getElementById("blurBackground");
-  let mvBody = document.querySelector('main');
+  let blurBackground = document.getElementById("RblurBackground");
+
+  moveinable=true
   
-  mvBody.style.position ="fixed"
 
   zoomContainer.style.backgroundColor = '--clr-black';
 
@@ -57,7 +37,6 @@ function openZoom(imageSrc, title, description) {
   
   zoomImage.addEventListener("transitionend", () => {
     zoomImage.classList.remove("flip-animation", "flip");
-    //blurBackground.style.display = "none";
   }, { once: true });
 }
 
@@ -66,18 +45,29 @@ function closeZoom() {
   let zoomTitle = document.querySelector(".title");
   let zoomDescrip = document.querySelector(".descrip");
   let mvBody = document.querySelector('main');
+  let blurBackground = document.getElementById("RblurBackground");
 
+  moveinable = false
 
   mvBody.style.position ="relative";
   blurBackground.style.display = "none";
 
 
-   zoomImage.src = "";
-   zoomTitle.innerText = "";
-   zoomDescrip.innerText = "";
+  zoomImage.src = "";
+  zoomTitle.innerText = "";
+  zoomDescrip.innerText = "";
+  zoomContainer.style.display = "none";
  
-   zoomContainer.style.display = "none";
- 
-   zoomTitle.style.opacity = "0";
-   zoomDescrip.style.opacity = "0";
+  zoomTitle.style.opacity = "0";
+  zoomDescrip.style.opacity = "0";
+}
+
+function move(e) {
+  if(moveinable == false){
+  window.scrollTo(2*e.clientX - window.innerWidth /2, 3*e.clientY - window.innerHeight /2);
+  }
+  else{
+    return
+  }
+  
 }

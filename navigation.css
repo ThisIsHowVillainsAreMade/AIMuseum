@@ -132,7 +132,7 @@ nav {
 /* Blur background à réutilisé */
 .blur-background {
   z-index: 1;
-  position: absolute;
+
   visibility: hidden;
   opacity: 0;
   width: 100vw;
