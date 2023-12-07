@@ -51,6 +51,7 @@
                   src="/assets/aboutImg/lilgirl.png"
                   alt="une petite fille avec un robot"
                   class="backgroundPictures"
+                  data-speed="0.5"
                   id="littleGirlAiPicture"
                 />
               </div>
@@ -386,6 +387,7 @@
                           src="./assets/carousel/icons8-linkedin-white.png"
                           alt="bouton linkedin"
                           class="linkedInButton"
+                          id="lyesLinkedIn"
                       /></a>
                     </div>
                   </div>
@@ -417,7 +419,10 @@
                           alt="bouton github"
                           class="githubButton"
                       /></a>
-                      <a href="" target="_blank"
+                      <a
+                        href="https://www.linkedin.com/in/lucien-kohli-347963205/
+                      "
+                        target="_blank"
                         ><img
                           src="./assets/carousel/icons8-linkedin-white.png"
                           alt="bouton linkedin"
@@ -437,7 +442,10 @@
                           alt="bouton github"
                           class="githubButton"
                       /></a>
-                      <a href="" target="_blank"
+                      <a
+                        href="https://www.linkedin.com/in/yohan-soundara-b54a22236/
+                      "
+                        target="_blank"
                         ><img
                           src="./assets/carousel/icons8-linkedin-white.png"
                           alt="bouton linkedin"
@@ -487,7 +495,52 @@
         </div>
         <div id="form-page" class="form-style">
           <!-- CONTENU FORM -->
-          <h2>Je suis le form</h2>
+          <form id="formContainer">
+            <div id="headerForm">
+              <h2 id="ideaTitle">Une idée d'un prompt* à soumettre ?</h2>
+              <p class="explicationsForm">
+                Si votre idée est choisie, nous créditerons votre oeuvre.
+              </p>
+            </div>
+            <div id="nameDiv">
+              <label for="yourName">Nom*:</label>
+              <input
+                type="text"
+                id="yourName"
+                name="name"
+                placeholder="Merci d'entrer votre nom ici."
+                required
+              />
+            </div>
+            <div id="emailDiv">
+              <label for="yourEmail">E-mail*:</label>
+              <input
+                type="email"
+                id="yourEmail"
+                name="email"
+                placeholder="exemple@mail.com"
+                required
+              />
+            </div>
+            <div id="messageDiv">
+              <label for="message">Votre idée de prompt*:</label>
+              <textarea
+                id="message"
+                name="message"
+                minlength="50"
+                maxlength="2000"
+                placeholder="Merci d'entrer votre idée de prompt ici."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="submitButton">
+              <p id="send">Envoyer</p>
+            </button>
+            <p class="explicationsForm">
+              *Un prompt est une instruction concise donnée à un modèle
+              d'intelligence artificielle pour générer son contenu.
+            </p>
+          </form>
         </div>
       </div>
       <!-- TOP MENU -->

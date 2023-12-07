@@ -202,3 +202,7 @@ input[type="radio"]:checked {
 .githubButton {
   height: 30px;
 }
+
+#lyesLinkedIn {
+  display: none;
+}
