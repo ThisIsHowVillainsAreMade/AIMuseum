@@ -31,6 +31,7 @@
   color: white;
   text-align: center;
   transition: transform 1s, opacity 1s;
+  transform-style: preserve-3d;
 }
 
 div.carousel__cell {
@@ -115,7 +116,7 @@ div.carousel__cell:hover {
   position: relative;
   z-index: 2;
   background: transparent;
-  margin: -15% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
 }
 
 .labelp {
@@ -124,6 +125,23 @@ div.carousel__cell:hover {
   align-items: end;
   justify-content: space-between;
   flex-direction: row-reverse;
+}
+
+input[type="radio"] {
+  /* Reminder: disabling default browser styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*Personalization */
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--clr-black);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--clr-black);
+  border-color: var(--clr-black);
 }
 
 .previous-button,
@@ -164,3 +182,27 @@ div.carousel__cell:hover {
   background-color: var(--clr-white);
   border: 1px solid var(--clr-white);
 }
+
+.carouselSection {
+  margin: 0px 10% 0 10%;
+  padding-bottom: 10%;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -37% 0% 0% 1%;
+}
+
+.linkedInButton {
+  height: 33px;
+}
+
+.githubButton {
+  height: 30px;
+}
+
+/* #lyesLinkedIn {
+  display: none;
+} */

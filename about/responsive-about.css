@@ -1,9 +1,10 @@
 /* TABLETTE */
 @media screen and (max-width: 1024px) {
   #aivolution {
-    height: 40svh;
+    /* height: 40svh;
     font-size: 5rem;
-    margin-top: 60svh;
+    margin-top: 60svh; */
+    visibility: hidden;
   }
 
   .mainAbout {
@@ -14,19 +15,20 @@
 /* MOBILE */
 @media screen and (max-width: 400px) {
   #robots {
-    height: 104svh;
-    object-fit: contain;
+    height: 85svh;
+    object-fit: cover;
   }
 
   #sky {
-    height: 80svh;
+    height: 100svh;
     object-fit: cover;
   }
 
   #aivolution {
-    height: 1svh;
+    /* height: 1svh;
     font-size: 2.5rem;
     margin-top: 60svh;
-    margin-bottom: 0;
+    margin-bottom: 0; */
+    visibility: hidden;
   }
 }
