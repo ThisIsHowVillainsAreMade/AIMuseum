@@ -37,7 +37,7 @@
     
                 setTimeout(function() {
     //          CHANGER DIRECTION PAGE 1                        <<=============
-                    window.location.href = "003-ROOM3.html"; 
+                    window.location.href = "room2.html"; 
                 }, 1000); 
             },0);
             }

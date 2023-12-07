@@ -53,7 +53,7 @@
 
         setTimeout(function() {
 //          CHANGER DIRECTION PAGE 2                       <<=============
-            window.location.href = "room1.html"; 
+            window.location.href = "room2.html"; 
         }, 1000); 
     },0);
     }

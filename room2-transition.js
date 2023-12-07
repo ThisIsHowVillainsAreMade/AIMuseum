@@ -1,12 +1,14 @@
     // 000-Séquence titre en fondu
     document.addEventListener('DOMContentLoaded', function () {
         const body = document.body;
+        
+        body.classList.add('hide-content');
     
         const wCover = document.createElement('div');
         wCover.className = 'wCover';
         body.appendChild(wCover);
     
-        wCover.innerHTML = '<p>ROOM 2</p>';
+        wCover.innerHTML = '<p>Ethique et débat</p>';
         // TEXT A CHANGER ICI                       <<<==============
             
             setTimeout(() => {
@@ -35,8 +37,8 @@
 
         setTimeout(function() {
 //          CHANGER DIRECTION PAGE 2                        <<=============
-            window.location.href = "000-wNextPage2.html"; 
-        }, 500); 
+            window.location.href = "003-ROOM3.html"; 
+        }, 1000); 
     },0);
     }
 
@@ -51,7 +53,7 @@
 
         setTimeout(function() {
 //          CHANGER DIRECTION PAGE 1                       <<=============
-            window.location.href = "000-welcome.html"; 
-        }, 500); 
+            window.location.href = "room1.html"; 
+        }, 1000); 
     },0);
     }
