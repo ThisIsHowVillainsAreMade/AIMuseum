@@ -31,6 +31,8 @@ function animateImages() {
   let ratio = current / imagesWidth;
   let intersectionRatioValue;
 
+  /* Parallax */
+
   images.forEach((images, idx) => {
     intersectionRatioValue = ratio - (idx - 0.4);
     setTransform(images, `translateX(${intersectionRatioValue * 35}px)`);
@@ -39,6 +41,8 @@ function animateImages() {
 
 init();
 animate();
+
+/* Script Popup */
 
 document.querySelectorAll(".imagescards").forEach((image) => {
   image.onclick = () => {
@@ -57,9 +61,11 @@ document.querySelectorAll(".imagescards").forEach((image) => {
       titleContent;
     setTimeout(() => {
       document.querySelector(".popup-image").classList.add("visible");
-    });
+    }, 70);
   };
 });
+
+/* Désactivation propriétés popup */
 
 document.querySelector(".popup-image .popup-button").onclick = () => {
   document.querySelector(".bigcontainer").classList.remove("background-blur");
