@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROOM03</title>
     <link rel="stylesheet" href="root.css" />
+    <link rel="stylesheet" href="transition.css" />
     <link rel="stylesheet" href="/navigation.css" />
     <link rel="stylesheet" href="/about/parallax.css" />
     <link rel="stylesheet" href="/about/main-content.css" />
@@ -356,9 +357,9 @@
 
       <!-- BOTTOM NAVIGATION (room1) -->
       <nav>
-        <a href="" class="nav-door previous"></a>
+        <a href="#" class="nav-door previous" onclick="showOverlayBack()"></a>
         <div class="pagination">3 / 3</div>
-        <a href="" class="nav-door next"></a>
+        <a href="#" class="nav-door next" onclick="showOverlay()"></a>
       </nav>
     </section>
     <main class="biggercontainer">
@@ -423,6 +424,7 @@
         </div>
       </div>
     </main>
+    <script src="room3-transition.js"></script>
     <script src="003-ROOM3.js"></script>
     <script src="navigation.js"></script>
     <script src="/about/parallax.js"></script>

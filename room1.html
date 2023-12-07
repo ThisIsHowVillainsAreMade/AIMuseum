@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/about/carousel.css" />
     <link rel="stylesheet" href="/about/responsive-about.css" />
     <link href="room1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="transition.css" />
     <title>Salle 1</title>
   </head>
   <body class="rOne">
@@ -356,9 +357,9 @@
 
       <!-- BOTTOM NAVIGATION (room1) -->
       <nav>
-        <a href="" class="nav-door previous"></a>
+        <a href="#" class="nav-door previous" onclick="showOverlayBack()"></a>
         <div class="pagination">1 / 3</div>
-        <a href="" class="nav-door next"></a>
+        <a href="#" class="nav-door next" onclick="showOverlay()"></a>
       </nav>
     </section>
 
@@ -383,5 +384,6 @@
     <script src="/navigation.js"></script>
     <script src="/about/parallax.js"></script>
     <script src="/about/carousel.js"></script>
+    <script src="room1-transition.js"></script>
   </body>
 </html>
