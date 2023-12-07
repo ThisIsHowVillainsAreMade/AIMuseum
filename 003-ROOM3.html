@@ -547,11 +547,11 @@
         </div>
       </div>
       <!-- TOP MENU -->
-      <div class="menu">
+      <div id="menu-hidden" class="menu">
         <button type="button" id="toggle-submit" class="toggle">Contact</button>
         <button type="button" id="toggle-about" class="toggle">A propos</button>
         <button type="button" id="toggle-audio" class="toggle audio-btn">
-          Audio
+          Pause
         </button>
       </div>
 
@@ -656,6 +656,14 @@
         </div>
       </div>
     </main>
+    <!-- AUDIO -->
+    <audio
+      id="music"
+      src="./audio/room3.wav"
+      autoplay="autoplay"
+      loop="loop"
+    ></audio>
+    <script src="audio.js"></script>
     <script src="room3-transition.js"></script>
     <script src="003-ROOM3.js"></script>
     <script src="navigation.js"></script>

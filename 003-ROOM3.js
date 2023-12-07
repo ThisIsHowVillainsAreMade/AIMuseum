@@ -46,6 +46,8 @@ animate();
 
 document.querySelectorAll(".imagescards").forEach((image) => {
   image.onclick = () => {
+    document.getElementById("menu-hidden").classList.add("hidden");
+    document.querySelector("nav").classList.add("hidden");
     document.querySelector(".bigcontainer").classList.add("background-blur");
     document.body.classList.add("no-scroll");
     document.querySelector(".popup-image").style.display = "flex";
@@ -68,10 +70,26 @@ document.querySelectorAll(".imagescards").forEach((image) => {
 /* Désactivation propriétés popup */
 
 document.querySelector(".popup-image .popup-button").onclick = () => {
+  document.getElementById("menu-hidden").classList.remove("hidden");
+  document.querySelector("nav").classList.remove("hidden");
   document.querySelector(".bigcontainer").classList.remove("background-blur");
   document.body.classList.remove("no-scroll");
   document.querySelector(".popup-image").classList.remove("visible");
-  setTimeout(() => {
-    document.querySelector(".popup-image").style.display = "none";
-  }, 0);
+  document.querySelector(".popup-image").style.display = "none";
 };
+
+// Hover des titres d'images
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  const images = card.querySelector(".imagescards");
+  const title = card.querySelector(".titlecards");
+
+  images.addEventListener("mouseover", () => {
+    title.classList.add("titlehover");
+  });
+
+  images.addEventListener("mouseout", () => {
+    title.classList.remove("titlehover");
+  });
+});

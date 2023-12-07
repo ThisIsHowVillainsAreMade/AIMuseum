@@ -14,7 +14,7 @@
 
 body {
   font-family: "SF-Pro-Display";
-  height: 4200px;
+  height: 4635px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,29 +34,33 @@ body {
 .bigcontainer {
   position: absolute;
   top: 0;
-  width: 4800px;
+  width: 5000px;
   height: 100%;
 }
 
 .gallery {
   position: absolute;
-  top: 15%;
-  height: 70%;
+  /*top: 15%;*/
+  height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/
   align-items: center;
 }
 
 .card {
-  margin: 1em;
+  margin: 7em;
+  width: 400px;
+  /* margin: 1em; */
   display: flex;
   position: relative;
-  width: 415px;
+  /* width: 415px; */
   overflow: hidden;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
 
 .imagescards {
@@ -71,14 +75,11 @@ body {
   color: var(--clr-white);
   z-index: 2;
   opacity: 0;
+  display: none;
 }
 
-.titlecards {
-  padding: 0.5em;
-  height: 2em;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  z-index: 1;
+.flex-title {
+  margin: 0;
 }
 
 /* Card hover */
@@ -90,9 +91,9 @@ body {
   transform-origin: center;
 }
 
-.card:hover .titlecards {
+.titlehover {
+  display: block;
   opacity: 1;
-  transition: 1s ease;
 }
 
 /* Media queries */
@@ -105,7 +106,6 @@ body {
   .gallery {
     display: flex;
     justify-content: flex-start;
-    top: 10%;
   }
 
   .biggercontainer {
@@ -146,13 +146,17 @@ body {
     height: 4000px;
   }
   .gallery {
-    top: 10%;
     justify-content: flex-start;
   }
   .card {
     margin: 7em;
     width: 369px;
   }
+
+  #card-one {
+    margin-left: 10em;
+  }
+
   .popup-image.visible {
     display: flex;
   }
@@ -240,32 +244,36 @@ body {
 /* Cards specifications */
 
 .card.one {
-  margin-left: 16em;
-  height: 100%;
+  display: flex;
+  margin-left: 45em;
+  height: 72%;
+  justify-content: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .card.two {
-  height: 75%;
+  height: 60%;
 }
 
 .card.three {
-  height: 35%;
+  height: 34%;
 }
 
 .card.four {
-  height: 65%;
+  height: 53%;
 }
 
 .card.five {
-  height: 50%;
+  height: 42%;
 }
 
 .card.six {
-  height: 70%;
+  height: 60%;
 }
 
 .card.seven {
-  height: 70%;
+  height: 61%;
 }
 
 .textcards-one {
@@ -280,4 +288,8 @@ body {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
