@@ -71,6 +71,10 @@ body {
 }
 
 .titlecards {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: var(--fs-300);
+  letter-spacing: 1.15px;
   margin: 0em;
   color: var(--clr-white);
   z-index: 2;
@@ -197,8 +201,11 @@ body {
 }
 
 .popup-image .popup-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1.15px;
   margin-bottom: 1em;
-  font-size: var(--fs-200);
+  font-size: var(--fs-400);
   color: var(--clr-white);
   z-index: 102;
 }

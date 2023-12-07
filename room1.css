@@ -15,7 +15,7 @@
   background-color: var(--clr-black);
   position: relative;
   min-height: 100vh;
-  font-family: "SF-Pro-Display";
+  font-family: 'SF-Pro-Display';
   z-index: 1;
 }
 
@@ -24,8 +24,10 @@
 }
 
 .title-s {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1.15px;
   font-size: var(--fs-200);
-  font-weight: 750;
   color: var(--clr-grey-100);
 }
 
@@ -165,8 +167,10 @@
 }
 
 .rOne-modal-title {
-  font-family: "SF-Pro-Display";
-  font-size: var(--fs-200);
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+  font-size: var(--fs-300);
   padding-bottom: 1rem;
   color: var(--clr-white);
 }

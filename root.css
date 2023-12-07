@@ -12,6 +12,11 @@
   --fs-600: 4rem;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+
+
 @font-face {
   font-family: "SF-Pro-Display";
   src: local(), url("assets/fonts/SF Pro Display/SF-Pro-Display-Medium.otf");
