@@ -1,14 +1,15 @@
-<html lang="fr">
+<html lang="FR_fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROOM02</title>
     <link rel="stylesheet" href="root.css" />
-    <link rel="stylesheet" href="/navigation.css" />
-    <link rel="stylesheet" href="/about/parallax.css" />
-    <link rel="stylesheet" href="/about/main-content.css" />
-    <link rel="stylesheet" href="/about/carousel.css" />
-    <link rel="stylesheet" href="/about/responsive-about.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="about/parallax.css" />
+    <link rel="stylesheet" href="about/main-content.css" />
+    <link rel="stylesheet" href="about/carousel.css" />
+    <link rel="stylesheet" href="about/responsive-about.css" />
     <link rel="stylesheet" href="room2.css" />
     <link rel="stylesheet" href="transition.css" />
   </head>
@@ -22,21 +23,21 @@
           <!-- Parallax Section -->
           <section class="parallaxContent">
             <img
-              src="/assets/parallaxMoutain/aiworld.png"
+              src="assets/parallaxMoutain/aiworld.png"
               id="robots"
               alt="robots"
             />
             <img
-              src="/assets/parallaxMoutain/moutainsTest.png"
+              src="assets/parallaxMoutain/moutainsTest.png"
               id="mountain"
               alt="moutain"
             />
             <img
-              src="/assets/parallaxMoutain/moonpng.png"
+              src="assets/parallaxMoutain/moonpng.png"
               id="moon"
               alt="moon"
             />
-            <img src="/assets/parallaxMoutain/sky2.png" id="sky" alt="sky" />
+            <img src="assets/parallaxMoutain/sky2.png" id="sky" alt="sky" />
             <h1 id="aivolution">Aivolution</h1>
           </section>
           <main class="mainAbout">
@@ -46,7 +47,7 @@
                 <h2 id="aboutMuseumTitle">
                   À propos du Musée de l'Intelligence Artificielle
                 </h2>
-                <img src="/assets/aboutImg/lilgirl.png" alt="" />
+                <img src="assets/aboutImg/lilgirl.png" alt="" />
               </div>
               <article>
                 <p>
@@ -89,7 +90,7 @@
                 <h2 id="howItWorksTitle">
                   Comment fonctionne l'Intelligence Artificielle ?
                 </h2>
-                <img src="/assets/aboutImg/ai.png" alt="" />
+                <img src="assets/aboutImg/ai.png" alt="" />
               </div>
               <article>
                 <h3>
@@ -180,7 +181,7 @@
                 <h2 id="historyOfAiTitle">
                   Histoire de l'Intelligence Artificielle
                 </h2>
-                <img src="/assets/aboutImg/future.png" alt="" />
+                <img src="assets/aboutImg/future.png" alt="" />
               </div>
               <article>
                 <h3>
@@ -270,7 +271,7 @@
             <section class="aboutSubSection">
               <div class="sectionBanner">
                 <h2>Contributeurs au projet du Musée de l'IA</h2>
-                <img src="/assets/aboutImg/tomorrow.png" alt="" />
+                <img src="assets/aboutImg/tomorrow.png" alt="une personne se tient face au futur" />
               </div>
               <article>
                 <p>
@@ -342,7 +343,52 @@
         </div>
         <div id="form-page" class="form-style">
           <!-- CONTENU FORM -->
-          <h2>Je suis le form</h2>
+          <form id="formContainer">
+            <div id="headerForm">
+              <h2 id="ideaTitle">Une idée d'un prompt* à soumettre ?</h2>
+              <p class="explicationsForm">
+                Si votre idée est choisie, nous créditerons votre oeuvre.
+              </p>
+            </div>
+            <div id="nameDiv">
+              <label for="yourName">Nom*:</label>
+              <input
+                type="text"
+                id="yourName"
+                name="name"
+                placeholder="Merci d'entrer votre nom ici."
+                required
+              />
+            </div>
+            <div id="emailDiv">
+              <label for="yourEmail">E-mail*:</label>
+              <input
+                type="email"
+                id="yourEmail"
+                name="email"
+                placeholder="exemple@mail.com"
+                required
+              />
+            </div>
+            <div id="messageDiv">
+              <label for="message">Votre idée de prompt*:</label>
+              <textarea
+                id="message"
+                name="message"
+                minlength="50"
+                maxlength="2000"
+                placeholder="Merci d'entrer votre idée de prompt ici."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="submitButton">
+              <p id="send">Envoyer</p>
+            </button>
+            <p class="explicationsForm">
+              *Un prompt est une instruction concise donnée à un modèle
+              d'intelligence artificielle pour générer son contenu.
+            </p>
+          </form>
         </div>
       </div>
       <!-- TOP MENU -->
@@ -503,8 +549,9 @@
     <script src="room2.js"></script>
     <script src="audio.js"></script>
     <script src="navigation.js"></script>
-    <script src="/about/parallax.js"></script>
-    <script src="/about/carousel.js"></script>
+    <script src="about/parallax.js"></script>
+    <script src="about/carousel.js"></script>
+    <script src="form.js"></script>
     <script src="room2-transition.js"></script>
   </body>
 </html>
