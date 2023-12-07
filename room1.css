@@ -24,7 +24,7 @@
 }
 
 .title-s {
-  font-size: 1.5rem;
+  font-size: var(--fs-200);
   font-weight: 750;
   color: var(--clr-grey-100);
 }
@@ -84,7 +84,7 @@
 }
 
 .rOne .background:hover {
-  transform: scale(1.5);
+  transform: scale(calc(1.5));
   transition: 0.9s ease;
 }
 
@@ -154,28 +154,26 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  border-radius: 6px;
   flex-basis: 70%;
 }
 
 .rOne-modal-body {
   flex-basis: 30%;
   padding: 1.5rem;
-  border-radius: 6px;
   display: none;
   flex-direction: column;
 }
 
 .rOne-modal-title {
   font-family: "SF-Pro-Display";
-  font-size: 1.5rem;
+  font-size: var(--fs-200);
   padding-bottom: 1rem;
   color: var(--clr-white);
 }
 
 .rOne-modal-content {
   font-family: "SF-Pro-Display";
-  font-size: clamp(1rem);
+  font-size: 1rem;
   padding-bottom: 2rem;
   color: var(--clr-white);
 }

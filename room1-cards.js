@@ -4,6 +4,7 @@ const column2 = document.querySelector(".column2");
 const column3 = document.querySelector(".column3");
 const column4 = document.querySelector(".column4");
 
+// Content to be inserted in cards and modals
 const columnArray = [
   {
     // card1
@@ -80,7 +81,7 @@ const columnArray = [
   {
     // card9
     colonne: 1,
-    h2: "Biais Algorithmiques",
+    h2: "Biais algorithmiques",
     image: "./images/r1_img_9.png",
     height: "23rem",
     content:
@@ -161,7 +162,7 @@ const columnArray = [
   {
     // card18
     colonne: 2,
-    h2: "Création Artistique",
+    h2: "Création artistique",
     image: "./images/r1_img_18.png",
     height: "28rem",
     content:
@@ -305,7 +306,7 @@ const columnArray = [
   {
     // card34
     colonne: 4,
-    h2: "L'IA et les médias sociaux",
+    h2: "IA et médias sociaux",
     image: "./images/r1_img_34.png",
     height: "28rem",
     content:
@@ -331,6 +332,7 @@ const columnArray = [
   },
 ];
 
+// Function designed to create cards and insert title and image
 function createCard(column, image, h2, height) {
   if (column === 1) {
     selectedColumn = column1;
@@ -377,17 +379,16 @@ const modalCloseButton = document.querySelector(".rOne-modal-closebutton");
 const overlay = document.querySelector(".rOne-overlay");
 const body = document.querySelector(".rOne");
 
+// Listening to the click on the card, to open modal and identify the title of the card the user clicked on
 cards.forEach(function (card) {
   card.addEventListener("click", function (event) {
     modal.classList.add("modal-open");
     modalBody.classList.add("modal-open");
     overlay.classList.add("display-overlay");
     body.classList.add("no-scroll");
-    console.log(event);
-    console.log(event.srcElement.parentNode);
     const title = event.srcElement.innerHTML;
     modalTitle.innerHTML = title;
-    // look for the element containing the title in the array, to identify corresponding image and content.
+    // looking for the element containing the title in the array, to identify corresponding image and content
     const selectedObject = columnArray.find(
       (arrayElement) => arrayElement.h2 === title
     );
@@ -397,6 +398,7 @@ cards.forEach(function (card) {
   });
 });
 
+// Listening to the click on the close button to close modal
 modalCloseButton.addEventListener("click", function () {
   modal.classList.remove("modal-open");
   modal.classList.remove("modal-open");
