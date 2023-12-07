@@ -1,9 +1,6 @@
 /* TABLETTE */
 @media screen and (max-width: 1024px) {
   #aivolution {
-    /* height: 40svh;
-    font-size: 5rem;
-    margin-top: 60svh; */
     visibility: hidden;
   }
 
@@ -25,10 +22,6 @@
   }
 
   #aivolution {
-    /* height: 1svh;
-    font-size: 2.5rem;
-    margin-top: 60svh;
-    margin-bottom: 0; */
     visibility: hidden;
   }
 }

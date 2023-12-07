@@ -1,12 +1,3 @@
-/* #about-page {
-  background-color: var(--clr-grey-100);
-  color: var(--clr-black);
-  min-height: 80svh;
-  max-width: 80svw;
-  margin: 0 1svw 0 1svw;
-  overflow: -moz-scrollbars-none;
-} */
-
 #about-page::-webkit-scrollbar {
   display: none;
 }
@@ -44,7 +35,6 @@
   gap: 1rem;
 }
 
-/* Banner with H2 title + Banner */
 .sectionBanner {
   position: relative;
   text-align: center;
