@@ -16,27 +16,6 @@ body.no-scroll {
   /* font-family: "SF-Pro-Display"; */
 }
 
-/* CONTENT 
-
-.grid {
-    width: 60vw;
-    height: 150vh;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    } 
-
-.square {
-    width: 100%;
-    height: 100%;
-    background-color: lightcyan;
-}
-
-*/
-
 /* NAVIGATION */
 
 nav {
@@ -132,7 +111,7 @@ nav {
 /* Blur background à réutilisé */
 .blur-background {
   z-index: 1;
-  position: absolute;
+
   visibility: hidden;
   opacity: 0;
   width: 100vw;
