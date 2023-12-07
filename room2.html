@@ -1,19 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROOM02</title>
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="/navigation.css" />
     <link rel="stylesheet" href="/about/parallax.css" />
     <link rel="stylesheet" href="/about/main-content.css" />
     <link rel="stylesheet" href="/about/carousel.css" />
     <link rel="stylesheet" href="/about/responsive-about.css" />
-    <link href="room1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="room2.css" />
     <link rel="stylesheet" href="transition.css" />
-    <title>Salle 1</title>
   </head>
-  <body class="rOne">
+  <body >
     <section id="navigation-section" class="navigation-section">
       <!-- about & form page + blurred background -->
       <div id="blur-background" class="blur-background">
@@ -358,32 +357,144 @@
       <!-- BOTTOM NAVIGATION (room1) -->
       <nav>
         <a href="#" class="nav-door previous" onclick="showOverlayBack()"></a>
-        <div class="pagination">1 / 3</div>
+        <div class="pagination">2 / 3</div>
         <a href="#" class="nav-door next" onclick="showOverlay()"></a>
       </nav>
     </section>
+    
+    <div class="carretest"><p class="disclaimer">Pour une expérience optimal,veuillez passer sur une vue ordinateur</p></div>
+    
+    <main onmousemove="move(event)">
+      <div class="Rblur-background" id="RblurBackground">
+      <div class="zoom-container" id="zoomContainer">
+        <div class="zoom-content">
+          <div class="image-full">
+            <img src="" alt="" id="zoomImage" class="pic">
+          </div>
+            <div class="text">
+            <h2 class="title-zoom"></h2>
+            <p class="descrip"></p>
+            <button class = "close-img" onclick="closeZoom()">close</button>
 
-    <!-- GALLERY -->
-    <main class="rOne js-scroll">
-      <section class="rOne-container-gallery">
-        <div class="rOne-column column1">
-          <!-- <div class="card card1">
-            <div class="background background1">
-              <h2 class="title-s">Lorem Ipsum</h2>
-            </div>
-          </div> -->
+          </div>
+
         </div>
-        <div class="rOne-column column2"></div>
-        <div class="rOne-column column3"></div>
-        <div class="rOne-column column4"></div>
-      </section>
-    </main>
+      </div>
+    </div>
+      
+      <section class="container" id="container">
+        <div class="allImages">
 
-    <!-- <div id="revealPoint">Reveal Point</div> -->
-    <script src="room1.js"></script>
-    <script src="/navigation.js"></script>
+          <div class="images"> <!--changer l'image biais raciaux-->
+            <div id="image1">
+              <img src="images/afro.png" alt="" class ="pic" onclick="openZoom('images/afro.png','Biais dans les systèmes','En 2018 des chercheurs ont découvert que les systèmes de reconnaissance faciale avec Amazon présentaient des biais raciaux, en montrant une précision plus faible pour les femmes et les personnes de couleur. Cela a soulevé des préoccupations quant à équité de ces technologies.')"/>
+              <div class="text">
+                <h2 class="title"><br>Biais dans les systèmes</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="images">
+            <div id="image2">
+              <img src="images/facebook.png" alt="" class ="pic" onclick="openZoom('images/facebook.png','Transparence algorithmique','En 2016, Facebook a été accusé de manipulation politique après que des allégations ont émergé suggérant que lalgorithme de la plateforme aurait pu influencer les opinions politiques des utilisateurs en modifiant le contenu de leur flux actualités.')"/>
+              <div class="text">
+                <h2 class="title"></br>Transparence algorithmique</h2>
+
+              </div>
+            </div>
+          </div>
+            
+        
+          <div class="images"> <!--changer l'image voiture autonome-->
+            <div id="image3">
+              <img src="images/r1_img_3.png" alt="" class ="pic" onclick="openZoom('images/r1_img_3.png','Responsabilité et prise de décision','Accident mortel impliquant une voiture autonome Uber en 2018 a soulevé des questions sur la responsabilité légale des accidents causés par des véhicules autonomes. Cela a incité à des discussions sur la nécessité de définir des normes et des règles pour ces technologies.')"/>
+              <div class="text">
+                <h2 class="title"></br>Responsabilité et prise de décision</h2>
+              </div>
+            </div>
+          </div>
+          
+        
+        
+          <div class="images">  
+            <div id="image4">
+              <img src="images/robot spy.png" alt="" class ="pic" onclick="openZoom('images/robot spy.png','Confidentialité des données','En 2020, un algorithme IA développé par Google DeepMind a été approuvé par la FDA américaine pour détecter les lésions oculaires liées au diabète. Cela a suscité des discussions sur intégration de IA dans le domaine médical et les implications éthiques associées.')"/>
+              <div class="text">
+                <h2 class="title"></br>Confidentialité des données</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="images">
+            <div id="image5">
+              <img src="images/Amazon.png" alt="" class ="pic" onclick="openZoom('images/Amazon.png','Automatisation et emploi ','En 2017, Amazon a introduit des entrepôts entièrement automatisés, suscitant des préoccupations concernant la sécurité des emplois pour les travailleurs humains. Les débats sur impact de automatisation sur emploi persistent dans divers secteurs.')"/>
+              <div class="text">
+                <h2 class="title"></br>Automatisation et emploi</h2>
+    
+              </div>
+            </div>
+          </div>
+          
+          <div class="images">
+            <div id="image6">
+              <img src="images/armée.png" alt="" class ="pic" onclick="openZoom('images/armée.png','Armes autonomes ','En 2018, des experts en intelligence artificielle ont signé une pétition appelant à interdiction des armes autonomes. Cette pétition a été présentée lors une conférence internationale sur IA, mettant en lumière les préoccupations croissantes quant aux risques potentiels de ces technologies.')"/>
+              <div class="text">
+                <h2 class="title"></br>Armes autonomes</h2>
+  
+              </div>  
+            </div>
+          </div>
+
+          <div class="images">
+            <div id="image7">
+              <img src="images/homme et AI robot.png" alt="" class ="pic" onclick="openZoom('images/homme et AI robot.png','Intelligence artificielle émotionnelle','Des entreprises comme Affectiva développent des logiciels capables de détecter les émotions des utilisateurs par le biais de caméras. Cela a soulevé des préoccupations quant à la vie privée et à utilisation éthique de ces technologies, notamment dans le domaine du marketing')"/>
+              <div class="text">
+                <h2 class="title"></br>Intelligence artificielle émotionnelle</h2>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="images">
+            <div id="image8">
+              <img src="images/docteur.png" alt="" class ="pic" onclick="openZoom('images/docteur.png','Domaine médical','En 2020, un algorithme IA développé par Google DeepMind a été approuvé par la FDA américaine pour détecter les lésions oculaires liées au diabète.')"/>
+              <div class="text">
+                <h2 class="title"></br>Domaine médical</h2>
+
+              </div>
+            </div>
+          </div>
+
+      
+         <!-- <div class="images">
+            <div id="image9">
+              <img src="images/r1_img_9.png" alt="" class ="pic" onclick="openZoom('images/r1_img_9.png','9eme image','9e description')"/>
+              <div class="text">
+                <h2 class="title"></br>Titre de l'image</h2>
+    
+              </div>
+            </div>
+          </div>
+          <div class="images">
+            <div id="image10">
+            <img src="images/r1_img_10.png" alt="" class ="pic" onclick="openZoom('images/r1_img_10.png','10eme image','10e description')"/>
+              <div class ="text">
+                <h2 class ="title"></br>Titre de l'image</h2>
+
+              </div>
+            </div>
+          </div>  
+        
+        -->
+
+
+      </div>
+    </section>
+  </main>
+    <script src="room2.js"></script>
+    <script src="navigation.js"></script>
     <script src="/about/parallax.js"></script>
     <script src="/about/carousel.js"></script>
-    <script src="room1-transition.js"></script>
+    <script src="room2-transition.js"></script>
   </body>
 </html>

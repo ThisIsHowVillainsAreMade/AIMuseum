@@ -1,0 +1,40 @@
+body {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+body.hide-content {
+    opacity: 1;
+}
+     
+   /*000-Séquence titre en fondu */
+    .wCover {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--clr-black);
+        opacity: 1;
+        z-index: 30; /*REVOIR ICI    <<<=============================*/
+    }
+    .wCover p {
+        color: var(--clr-white);
+        font-size: 4rem;
+        transition: opacity 1s ease;
+        opacity: 0;
+    }
+    #transitionOverlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: var(--clr-black);
+                z-index: 31;
+                opacity: 0;
+                transition: opacity 1s ease;
+            }
