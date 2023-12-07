@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="/navigation.css" />
+    <link rel="stylesheet" href="/form.css" />
     <link rel="stylesheet" href="/about/parallax.css" />
     <link rel="stylesheet" href="/about/main-content.css" />
     <link rel="stylesheet" href="/about/carousel.css" />
@@ -13,7 +14,9 @@
     <link rel="stylesheet" href="transition.css" />
     <title>Salle 1</title>
   </head>
+
   <body class="rOne">
+    <!-- NAVIGATION -->
     <section id="navigation-section" class="navigation-section">
       <!-- about & form page + blurred background -->
       <div id="blur-background" class="blur-background">
@@ -47,7 +50,13 @@
                 <h2 id="aboutMuseumTitle">
                   À propos du Musée de l'Intelligence Artificielle
                 </h2>
-                <img src="/assets/aboutImg/lilgirl.png" alt="" />
+                <img
+                  src="/assets/aboutImg/lilgirl.png"
+                  alt="une petite fille avec un robot"
+                  class="backgroundPictures"
+                  data-speed="0.5"
+                  id="littleGirlAiPicture"
+                />
               </div>
               <article>
                 <p>
@@ -90,7 +99,12 @@
                 <h2 id="howItWorksTitle">
                   Comment fonctionne l'Intelligence Artificielle ?
                 </h2>
-                <img src="/assets/aboutImg/ai.png" alt="" />
+                <img
+                  src="/assets/aboutImg/ai.png"
+                  alt="un robot humanoïde doté d'une intelligence artificielle"
+                  class="backgroundPictures"
+                  id="AiBotPicture"
+                />
               </div>
               <article>
                 <h3>
@@ -181,7 +195,12 @@
                 <h2 id="historyOfAiTitle">
                   Histoire de l'Intelligence Artificielle
                 </h2>
-                <img src="/assets/aboutImg/future.png" alt="" />
+                <img
+                  src="/assets/aboutImg/future.png"
+                  alt="une femme robot fait face à elle-même"
+                  class="backgroundPictures"
+                  id="faceToFaceAiPicture"
+                />
               </div>
               <article>
                 <h3>
@@ -271,7 +290,12 @@
             <section class="aboutSubSection">
               <div class="sectionBanner">
                 <h2>Contributeurs au projet du Musée de l'IA</h2>
-                <img src="/assets/aboutImg/tomorrow.png" alt="" />
+                <img
+                  src="/assets/aboutImg/tomorrow.png"
+                  alt="une personne se tient de dos face à l'horizon et une grosse machine robotique en lévitation"
+                  class="backgroundPictures"
+                  id="tomorrowPicture"
+                />
               </div>
               <article>
                 <p>
@@ -292,13 +316,148 @@
               <!-- Carousel -->
               <div class="scene">
                 <div class="carousel">
-                  <div class="carousel__cell">Océane</div>
-                  <div class="carousel__cell">Samir</div>
-                  <div class="carousel__cell">Pauline</div>
-                  <div class="carousel__cell">Lyes</div>
-                  <div class="carousel__cell">Hamidou</div>
-                  <div class="carousel__cell">Lucien</div>
-                  <div class="carousel__cell">Yohan</div>
+                  <div class="carousel__cell">
+                    Océane
+                    <div class="links">
+                      <a
+                        href="https://github.com/ThisIsHowVillainsAreMade"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/oaiw/"
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                    Samir
+                    <div class="links">
+                      <a href="https://github.com/ssvm1" target="_blank">
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/samir-b-540063195/"
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                    Pauline
+                    <div class="links">
+                      <a href="https://github.com/Paul-Lac" target="_blank">
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/pauline-lacroix-0b546022/"
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                    Lyes
+                    <div class="links">
+                      <a href="https://github.com/ljomni" target="_blank">
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/lyes-undefined-8b6b912a3/"
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                          id="lyesLinkedIn"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                    Hamidou
+                    <div class="links">
+                      <a href="https://github.com/HamIIdou" target="_blank">
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/hamidou-sall-mamadou-390b4118b/"
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                    Lucien
+                    <div class="links">
+                      <a href="https://github.com/LucS0MA" target="_blank">
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/lucien-kohli-347963205/
+                      "
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                    Yohan
+                    <div class="links">
+                      <a
+                        href="https://github.com/YohanSoundara"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/carousel/icons8-github-white.png"
+                          alt="bouton github"
+                          class="githubButton"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/in/yohan-soundara-b54a22236/
+                      "
+                        target="_blank"
+                        ><img
+                          src="./assets/carousel/icons8-linkedin-white.png"
+                          alt="bouton linkedin"
+                          class="linkedInButton"
+                      /></a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- Options -->
@@ -338,20 +497,63 @@
               </div>
             </section>
           </main>
-          <!-- <script src="parallax.js"></script>
-          <script src="carousel.js"></script> -->
         </div>
         <div id="form-page" class="form-style">
           <!-- CONTENU FORM -->
-          <h2>Je suis le form</h2>
+          <form id="formContainer">
+            <div id="headerForm">
+              <h2 id="ideaTitle">Une idée d'un prompt* à soumettre ?</h2>
+              <p class="explicationsForm">
+                Si votre idée est choisie, nous créditerons votre oeuvre.
+              </p>
+            </div>
+            <div id="nameDiv">
+              <label for="yourName">Nom*:</label>
+              <input
+                type="text"
+                id="yourName"
+                name="name"
+                placeholder="Merci d'entrer votre nom ici."
+                required
+              />
+            </div>
+            <div id="emailDiv">
+              <label for="yourEmail">E-mail*:</label>
+              <input
+                type="email"
+                id="yourEmail"
+                name="email"
+                placeholder="exemple@mail.com"
+                required
+              />
+            </div>
+            <div id="messageDiv">
+              <label for="message">Votre idée de prompt*:</label>
+              <textarea
+                id="message"
+                name="message"
+                minlength="50"
+                maxlength="2000"
+                placeholder="Merci d'entrer votre idée de prompt ici."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="submitButton">
+              <p id="send">Envoyer</p>
+            </button>
+            <p class="explicationsForm">
+              *Un prompt est une instruction concise donnée à un modèle
+              d'intelligence artificielle pour générer son contenu.
+            </p>
+          </form>
         </div>
       </div>
       <!-- TOP MENU -->
       <div class="menu">
-        <button type="button" id="toggle-submit" class="toggle">form</button>
-        <button type="button" id="toggle-about" class="toggle">about</button>
+        <button type="button" id="toggle-submit" class="toggle">Contact</button>
+        <button type="button" id="toggle-about" class="toggle">A propos</button>
         <button type="button" id="toggle-audio" class="toggle audio-btn">
-          audio
+          Pause
         </button>
       </div>
 
@@ -363,10 +565,28 @@
       </nav>
     </section>
 
+    <!-- MODAL -->
+    <div class="rOne-modal">
+      <div class="rOne-modal-background"></div>
+      <div class="rOne-modal-body">
+        <!-- <div class="wrap-text"> -->
+        <h2 class="rOne-modal-title">
+          <!-- Filled with JS -->
+        </h2>
+        <p class="rOne-modal-content">
+          <!-- Filled with JS -->
+        </p>
+        <!-- </div> -->
+        <button class="rOne-modal-closebutton">Fermer</button>
+      </div>
+    </div>
+    <div class="rOne-overlay"></div>
+
     <!-- GALLERY -->
-    <main class="rOne js-scroll">
+    <main class="rOne">
       <section class="rOne-container-gallery">
         <div class="rOne-column column1">
+          <!-- Example of code HTML code generated by JS -->
           <!-- <div class="card card1">
             <div class="background background1">
               <h2 class="title-s">Lorem Ipsum</h2>
@@ -379,11 +599,22 @@
       </section>
     </main>
 
-    <!-- <div id="revealPoint">Reveal Point</div> -->
-    <script src="room1.js"></script>
+    <!-- AUDIO -->
+    <audio
+      id="music"
+      src="./audio/room1.wav"
+      autoplay="autoplay"
+      loop="loop"
+    ></audio>
+
+    <!-- SCRIPTS -->
+    <script src="audio.js"></script>
+    <script src="room1-animation.js"></script>
+    <script src="room1-cards.js"></script>
     <script src="/navigation.js"></script>
     <script src="/about/parallax.js"></script>
     <script src="/about/carousel.js"></script>
+    <script src="form.js"></script>
     <script src="room1-transition.js"></script>
   </body>
 </html>

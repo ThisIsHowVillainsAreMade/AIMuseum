@@ -152,6 +152,11 @@ body {
     margin: 7em;
     width: 369px;
   }
+
+  #card-one {
+    margin-left: 10em;
+  }
+
   .popup-image.visible {
     display: flex;
   }
@@ -241,34 +246,34 @@ body {
 .card.one {
   display: flex;
   margin-left: 45em;
-  height: 77%;
+  height: 72%;
   justify-content: center;
   align-content: flex-end;
   flex-wrap: wrap;
 }
 
 .card.two {
-  height: 65%;
-}
-
-.card.three {
-  height: 37%;
-}
-
-.card.four {
   height: 60%;
 }
 
+.card.three {
+  height: 34%;
+}
+
+.card.four {
+  height: 53%;
+}
+
 .card.five {
-  height: 46%;
+  height: 42%;
 }
 
 .card.six {
-  height: 65%;
+  height: 60%;
 }
 
 .card.seven {
-  height: 67%;
+  height: 61%;
 }
 
 .textcards-one {

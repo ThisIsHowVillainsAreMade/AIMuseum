@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -347,10 +347,10 @@
       </div>
       <!-- TOP MENU -->
       <div class="menu">
-        <button type="button" id="toggle-submit" class="toggle">form</button>
-        <button type="button" id="toggle-about" class="toggle">about</button>
+        <button type="button" id="toggle-submit" class="toggle">Contact</button>
+        <button type="button" id="toggle-about" class="toggle">A propos</button>
         <button type="button" id="toggle-audio" class="toggle audio-btn">
-          audio
+          Pause
         </button>
       </div>
 
@@ -374,7 +374,7 @@
             <div class="text">
             <h2 class="title-zoom"></h2>
             <p class="descrip"></p>
-            <button class = "close-img" onclick="closeZoom()">close</button>
+            <button class = "close-img" onclick="closeZoom()">Fermer</button>
 
           </div>
 
@@ -491,7 +491,17 @@
       </div>
     </section>
   </main>
+
+    <!-- AUDIO -->
+    <audio
+      id="music"
+      src="./audio/room2.wav"
+      loop="loop"
+      autoplay="autoplay"
+    ></audio>
+
     <script src="room2.js"></script>
+    <script src="audio.js"></script>
     <script src="navigation.js"></script>
     <script src="/about/parallax.js"></script>
     <script src="/about/carousel.js"></script>
