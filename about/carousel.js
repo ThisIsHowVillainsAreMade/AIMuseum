@@ -14,6 +14,13 @@ function rotateCarousel() {
     "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
 }
 
+cells.forEach(function (cell, index) {
+  cell.addEventListener("click", function () {
+    selectedIndex = index;
+    rotateCarousel();
+  });
+});
+
 var prevButton = document.querySelector(".previous-button");
 prevButton.addEventListener("click", function () {
   selectedIndex--;
