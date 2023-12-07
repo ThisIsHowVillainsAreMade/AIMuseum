@@ -127,6 +127,23 @@ div.carousel__cell:hover {
   flex-direction: row-reverse;
 }
 
+input[type="radio"] {
+  /* Reminder: disabling default browser styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*Personalization */
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--clr-black);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--clr-black);
+  border-color: var(--clr-black);
+}
+
 .previous-button,
 .next-button {
   color: var(--clr-white);
