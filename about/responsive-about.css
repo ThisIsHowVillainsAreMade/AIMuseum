@@ -7,6 +7,10 @@
   .mainAbout {
     margin-top: -26svh;
   }
+
+  #ideaTitle {
+    margin-top: 50svh;
+  }
 }
 
 /* MOBILE */
@@ -23,5 +27,9 @@
 
   #aivolution {
     visibility: hidden;
+  }
+
+  #ideaTitle {
+    margin-top: 50svh;
   }
 }
