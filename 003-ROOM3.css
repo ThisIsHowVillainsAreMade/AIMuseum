@@ -14,8 +14,7 @@
 
 body {
   font-family: "SF-Pro-Display";
-  font-weight: lighter;
-  height: 4200px;
+  height: 4635px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,7 +34,7 @@ body {
 .bigcontainer {
   position: absolute;
   top: 0;
-  width: 4800px;
+  width: 5000px;
   height: 100%;
 }
 
@@ -80,6 +79,7 @@ body {
   color: var(--clr-white);
   z-index: 2;
   opacity: 0;
+  display: none;
 }
 
 .flex-title {
@@ -95,9 +95,9 @@ body {
   transform-origin: center;
 }
 
-.card:hover .titlecards {
+.titlehover {
+  display: block;
   opacity: 1;
-  transition: 1s ease;
 }
 
 /* Media queries */
@@ -156,6 +156,11 @@ body {
     margin: 7em;
     width: 369px;
   }
+
+  #card-one {
+    margin-left: 10em;
+  }
+
   .popup-image.visible {
     display: flex;
   }
@@ -247,36 +252,35 @@ body {
 
 .card.one {
   display: flex;
-  margin-left: 16em;
-  height: 80%;
-  /* align-items: center; */
+  margin-left: 45em;
+  height: 72%;
   justify-content: center;
   align-content: flex-end;
   flex-wrap: wrap;
 }
 
 .card.two {
-  height: 65%;
-}
-
-.card.three {
-  height: 35%;
-}
-
-.card.four {
   height: 60%;
 }
 
+.card.three {
+  height: 34%;
+}
+
+.card.four {
+  height: 53%;
+}
+
 .card.five {
-  height: 46%;
+  height: 42%;
 }
 
 .card.six {
-  height: 65%;
+  height: 60%;
 }
 
 .card.seven {
-  height: 67%;
+  height: 61%;
 }
 
 .textcards-one {
@@ -296,4 +300,3 @@ body.no-scroll {
 .hidden {
   display: none;
 }
-

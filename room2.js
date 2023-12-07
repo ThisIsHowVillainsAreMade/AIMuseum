@@ -62,12 +62,38 @@ function closeZoom() {
   zoomDescrip.style.opacity = "0";
 }
 
+
+
+let targetX = 0;
+let targetY = 0;
+let isMoving = false;
+let lastMoveTime = 0;
+
 function move(e) {
-  if(moveinable == false){
-  window.scrollTo(2*e.clientX - window.innerWidth /2, 3*e.clientY - window.innerHeight /2);
+  if (!moveinable) {
+    targetX = 2 * e.clientX - window.innerWidth / 2;
+    targetY = 3 * e.clientY - window.innerHeight / 2;
+
+    const currentTime = Date.now();
+    if (!isMoving && currentTime - lastMoveTime > 200) {
+      isMoving = true;
+      movePageSmoothly(currentTime);
+    }
   }
-  else{
-    return
+}
+
+function movePageSmoothly(startTime) {
+  const currentX = window.scrollX;
+  const currentY = window.scrollY;
+
+  const deltaX = (targetX - currentX) / 10; // You can adjust the speed by changing the divisor
+  const deltaY = (targetY - currentY) / 10;
+
+  window.scrollTo(currentX + deltaX, currentY + deltaY);
+
+  if (Math.abs(currentX + deltaX - targetX) > 1 || Math.abs(currentY + deltaY - targetY) > 1) {
+    requestAnimationFrame(() => movePageSmoothly(startTime));
+  } else {
+    isMoving = false;
   }
-  
 }
