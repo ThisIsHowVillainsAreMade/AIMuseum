@@ -46,6 +46,8 @@ animate();
 
 document.querySelectorAll(".imagescards").forEach((image) => {
   image.onclick = () => {
+    document.getElementById("menu-hidden").classList.add("hidden");
+    document.querySelector("nav").classList.add("hidden");
     document.querySelector(".bigcontainer").classList.add("background-blur");
     document.body.classList.add("no-scroll");
     document.querySelector(".popup-image").style.display = "flex";
@@ -68,6 +70,8 @@ document.querySelectorAll(".imagescards").forEach((image) => {
 /* Désactivation propriétés popup */
 
 document.querySelector(".popup-image .popup-button").onclick = () => {
+  document.getElementById("menu-hidden").classList.remove("hidden");
+  document.querySelector("nav").classList.remove("hidden");
   document.querySelector(".bigcontainer").classList.remove("background-blur");
   document.body.classList.remove("no-scroll");
   document.querySelector(".popup-image").classList.remove("visible");
