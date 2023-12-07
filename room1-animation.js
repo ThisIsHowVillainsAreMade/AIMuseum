@@ -21,6 +21,9 @@ function scrollReveal() {
 // Add an event listener to detect scrolling on page, launching the scroll reveal function.
 window.addEventListener("scroll", scrollReveal);
 
+// Add an event listener to detect loading of page, launching the scroll reveal function.
+window.addEventListener("load", scrollReveal);
+
 // SMOOTH SCROLL ANIMATION
 // const body = document.body,
 //   jsScroll = document.getElementsByClassName("js-scroll")[0],
